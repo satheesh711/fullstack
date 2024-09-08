@@ -31,13 +31,14 @@
 }
 #sec1
 {
+    display: inline-block;
     margin-top:63px;
+    background-color:aqua;
 }
 #sec1_11
 {
-    float:inline-start;
+    float:left;
     width: 79%;
-    height:300px;
     padding-left: 1%;
     background:linear-gradient(to left,rgb(254, 110, 8),rgb(213, 199, 39));
 }
@@ -59,11 +60,10 @@
 }
 #sec1_2
 {
-    float: right;
-    background-color: aqua;
+    float: left;
     width: 17%;
-    height:300px;
     padding-left: 3%;
+
 }
 #sec1_2 > a
 {
@@ -103,7 +103,6 @@
 #sec3
 {
     padding-top: 5%;
-    /* background-color: red; */
 }
 #sec3 input
 {
