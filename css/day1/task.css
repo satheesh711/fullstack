@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+    color: white;
+}
+#details{
+    /* color: white; */
+    background-color:darkmagenta;
+}
+#professional{
+    /* color: white; */
+    background-color: rgb(238, 50, 13);
+}
+#work_experience{
+    /* color: white; */
+    background-color: rgba(22, 172, 232, 0.915);
+}
+h2{
+    color: black;
+}
+#list li{
+    color: black !important;
+} 
+#education{
+    /* color: white; */
+    background-color:green;
+}
+#skill
+{
+    /* color: white; */
+    background-color: orange;
+}
