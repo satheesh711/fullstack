@@ -1,31 +1,23 @@
 #hd1
 {
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     background-color: black;
     color: white;
     width: 100%;
     top: 0;
     left: 0;
-    /* margin-top: -10%; */
-    padding: 0.5%;
+    z-index: 3;
 }
 #hd1_c
 {
-    justify-content:space-around;
-    width: 26%;
-    display:inline;
     float:right;
-    margin-top: 1%;
+    width: 35%;
 }
 #hd1_c>p
 {
-    margin: 0;
-    display: inline-block;
-    margin-left: 9%;
+    float: right;
     padding: 1%;
+    margin-right: 4%;
 }
 #hd1_c>p:hover
 {
@@ -39,35 +31,107 @@
 }
 #sec1
 {
-    display:inline-block;
-    margin-top: 5%;
-    background-color: red;
+    margin-top:63px;
 }
-#sec1_1
+#sec1_11
 {
-    display: inline-block;
-    width: 60%;
-    background:linear-gradient(to left,rgb(244, 161, 6),rgb(243, 226, 39));
+    float:inline-start;
+    width: 79%;
+    height:265px;
+    padding-left: 1%;
+    background:linear-gradient(to left,rgb(254, 110, 8),rgb(213, 199, 39));
+}
+#sec1_11 > p
+{
+    margin: 0;
 }
 #sec1_12
 {
-    display: inline-block;
-    /* float:inline-start; */
+    box-sizing: border-box;
+    float: left;
+    margin: 0% 2%;
+    margin-bottom: 2%;
     background-color: darkgray;
     width: 150px;
     height: 150px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 8%;
 }
 #sec1_2
 {
+    float: right;
     background-color: aqua;
-    width: 32%;
+    width: 17%;
+    height:265px;
     padding-left: 3%;
 }
 #sec1_2 > a
 {
     display: block;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+#sec2
+{
+    display: inline-block;
+}
+.m
+{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(204, 201, 201);
+    outline: 3px black solid;
+    margin-left: 30px;
+}
+.m > p
+{
+    text-align: center;
+    padding-top: 35%;
+}
+.m > span
+{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 3%;
+    top: 80%;
+    left: 7%;
+}
+#sec3
+{
+    padding-top: 5%;
+    /* background-color: red; */
+}
+#sec3 input
+{
+    margin: 2% 0.1%;
+    width: 98%;
+    padding: 1%;
+}
+#sec3 input[type="checkbox"]
+{
+    width: 4%;
+}
+#sec3 button
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+#sec3 button:hover
+{
+    background-color: aqua;
+    color: black;
+}
+footer
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1%;
     margin-top: 5%;
-    /* margin-left: 5%; */
 }
