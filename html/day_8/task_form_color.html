@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            form with color
+        </title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Register here</legend>
+            <form action="tx.txt">
+                <pre>
+                    <h2>i am going to join in 10,000coders &#128214 and wanna learn subject and goona become developer &#128187 </h2>
+                    <div style="background-color:aqua;">
+                        <label for="name">Enter Name</label>
+                        <input type="text" id="name" pattern="[a-zA-Z]{5,}" required>
+                    </div>
+                    <div style="background-color: chartreuse;">
+                        <label for="pswd">Enter Password</label>
+                        <input type="password" id="pswd" pattern="[a-zA-Z0-9@#$%^&]{8,}" required>
+                    </div>
+                    <div style="background-color: coral;">
+                        <label for="email">Enter Email id</label>
+                        <input type="email"  id="email" pattern="[a-z0-9._]+@[a-z]+\.[a-z]{2,}" required>
+                    </div>
+                    <div style="background-color: darkorchid;">
+                        <label for="Course">Select Course</label>
+                        <select name="Course" id="Course" style="width: 170;" required>
+                            <option value="full stack" selected>full stack</option>
+                            <option value="data analyst">data analyst</option>
+                            <option value="data science">data science</option>
+                            <option value="python" disabled>python</option>
+                            <option value="devops">devops</option>
+                        </select>
+                    </div>
+                    <div style="background-color: deeppink;">
+                        <label for="bacth">select batch</label>
+                        <input type="text" list="bacth">
+                        <datalist id="bacth">
+                            <option value="bacth-1" disabled>bacth-1</option>
+                            <option value="bacth-2">bacth-2</option>
+                            <option value="bacth-3">bacth-3</option>
+                            <option value="bacth-4">bacth-4</option>
+                            <option value="bacth-5">bacth-5</option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: lightcoral;">
+                        <label for="file">upload resume</label>
+                        <input type="file" id="file" required>
+                    </div>
+                    <div style="background-color:cornflowerblue;">
+                        <label for="gen">select gender</label>
+                        <input type="radio" name="gen" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gen" id="female"><label for="female">Female</label>
+                        <input type="radio" name="gen" id="other"><label for="other">Other</label>
+                    </div>
+                    <input type="checkbox" id="chbox" required> I agree to <a href="">terms</a> and <a href="">conditions</a>
+                    <div style="background-color: chartreuse;">
+                        <textarea id="area" rows="5" cols="120">
+                            satheesh    
+                            hyd
+                            telangana
+                            india
+
+                        </textarea>
+                    </div>
+
+                    <button type="submit">submit</button>
+                </pre>  
+            </form>
+        </fieldset>
+    </body>
+</html>

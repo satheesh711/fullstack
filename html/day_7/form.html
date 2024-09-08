@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>form in html</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Register here</legend>
+            <form action="text.txt" method="post">
+                <pre>
+                    <label for="img">upload Image:</label>
+                    
+                    <input type="image"  src="mahesh.jpg" width="200" height="200" id="img">
+    
+                    <label for="name">Enter name : </label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Enter Email:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="edu">Recent Education: </label>
+                    <select name="edu" id="edu" style="width: 170;" required>
+                        <option value="">Chose from below</option>
+                        <option value="B.tech">B.tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="B.com">B.com</option>
+                        <option value="B.sc">B.sc</option>
+
+                    </select>
+    
+                    <label for="year">Year of Passed out: </label>
+                    <select name="year" id="year" style="width: 169;" required>
+                        <option value="">Choose from below</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+
+                    </select>
+
+                    <label for="loc">Location: </label>
+                    <input type="text"  list="loc"  required>
+                    <datalist id="loc">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Benguluru">Benguluru</option>
+                        <option value="mumbai">mumbai</option>
+                        <option value="pune">pune</option>
+                    </datalist>
+                    <label for="course">Choose Your Course: </label>
+                    <select name="course" id="course" required>
+                        <option value="">Choose from below</option>
+                        <option value="Front-end developer">Front end developer</option>
+                        <option value="back-end developer">back-end developer</option>
+                        <option value="Full-stack">Full-stack</option>
+                        <option value="Data analyst">DAta analyst</option>
+                        <option value="data base">data base</option>
+                    </select>
+                    
+                    <label for="num">Phone Number:</label>
+                    <input type="number"  id="num" required>
+
+                    <label for="gen">Gender:</label>
+                    <input type="radio" name="gen" id="male" ><label for="male">Male</label>  
+                    <input type="radio" name="gen" id="Female"> <label for="Female">Female</label>
+                    <input type="radio" name="gen" id="Other"> <label for="Other">Other</label>
+
+                    <input type="checkbox" required>Do you Want to become a developer
+
+                    <button type="submit">submit</button>
+                    </pre>
+            </form>
+        </fieldset>
+    </body>
+</html>
