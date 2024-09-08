@@ -37,7 +37,7 @@
 {
     float:inline-start;
     width: 79%;
-    height:265px;
+    height:300px;
     padding-left: 1%;
     background:linear-gradient(to left,rgb(254, 110, 8),rgb(213, 199, 39));
 }
@@ -62,7 +62,7 @@
     float: right;
     background-color: aqua;
     width: 17%;
-    height:265px;
+    height:300px;
     padding-left: 3%;
 }
 #sec1_2 > a
