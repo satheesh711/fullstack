@@ -1,0 +1,78 @@
+#contanair
+{
+    background-color: aqua;
+    text-align: center;
+    padding: 5%;
+}
+#contanair > .frst
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+#contanair > .scd
+{
+    color:darkorchid;
+    font-size: 42px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#par
+{
+    display: flex;
+    margin-top: 8%;
+    column-gap: 4%;
+    align-items:last baseline;
+}
+.child
+{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.em
+{
+    font-size: 35px;
+}
+.mid
+{
+    font-size: 25px;
+    line-height: 40px;
+    color: blue;
+}
+.last
+{
+    font-size: 40px;
+    color: gold;
+}
+.sym
+{
+    color:gold
+}
+.child > p
+{
+    opacity: 0.4;
+}
+.child > a
+{
+    font-size: 20px;
+    font-weight: 900;
+}
+#be
+{
+    font-size: 20px;
+    opacity: 1;
+    color: gold;
+    background-color: blue;
+    padding: 5%;
+}
+.two > a
+{
+    background-color:blue;
+    color: white;
+    padding: 7% 10%;
+}

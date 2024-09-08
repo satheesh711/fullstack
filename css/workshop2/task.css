@@ -1,0 +1,382 @@
+header
+{
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    padding: 1%;
+    background-color: blue;
+    z-index: 1;
+}
+#logo > img
+{
+    width: 60px;
+}
+#background_image
+{
+    background-image: url(https://ih1.redbubble.net/image.4412515400.4355/flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+    width: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bg_contant
+{
+    text-align: center;
+    padding: 16% 25%;
+}
+#bg_heading
+{
+    font-size: 58px;
+    font-weight: bolder;
+}
+#part2
+{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+#part2 p
+{
+    font-size: 20px;
+}
+#part2_1
+{
+    background-color: aqua;
+    width: 25%;
+    padding: 7% 2%;
+}
+#smile
+{
+    height: 130px;
+    font-size:100px;
+    color: white;
+    font-weight:bold;
+}
+#part2_1:hover
+{
+    #smile
+    {
+        font-size: 110px;
+    }
+}
+
+#part2_2
+{
+    background-color: blue;
+    width: 20%;
+    padding: 7% 2%;
+}
+#pen
+{
+    height: 130px;
+    font-size:100px;
+    color: white;
+    font-weight:bold;
+}
+#part2_2:hover
+{
+    #pen
+    {
+        font-size: 110px;
+    }
+}
+#part2_3
+{
+    background-color:chartreuse;
+    width: 20%;
+    padding: 7% 2%;
+}
+#king
+{
+    height: 130px;
+    font-size:100px;
+    color: white;
+    font-weight:bold;
+}
+#part2_3:hover
+{
+    #king
+    {
+        font-size: 110px;
+    }
+}
+#part2_4
+{
+    background-color:darkorange;
+    width: 20%;
+    padding: 7% 2%;
+}
+#flower
+{
+    height: 130px;
+    font-size:100px;
+    color: white;
+    font-weight:bold;
+}
+#part2_4:hover
+{
+    #flower
+    {
+
+        font-size: 110px;
+    }
+}
+#part3
+{
+    box-sizing: content-box;
+    width: 100%;
+    background-color:crimson;
+    text-align: center;
+    padding-top: 8%;
+}
+#part3_1 >span
+{
+    font-family: cursive;
+    color:greenyellow;
+    font-weight:lighter;
+}
+#part3_1 > h1
+{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+#part3_1 > p
+{
+    font-size: 20px;
+    opacity: 0.5;
+}
+#part3_2
+{
+    width: 95%;
+    display: flex;
+    padding-left: 5%;
+}
+#part3_2 p{
+    opacity: 0.7;
+}
+.part3_21
+{
+    width: 15%;
+    margin-left:6%;
+    padding-bottom: 8%;
+    margin-top: 5%;
+}
+#icon
+{
+    position: relative;
+    box-sizing: border-box;
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#icon >img
+{
+    position: absolute;
+    object-fit: contain;
+    width:50%;
+    height: 50%;
+    top: 25%;
+    right: 25%;
+}
+#p3i1:hover
+{
+    .p3i11 
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
+#p3i2:hover
+{
+    .p3i21 
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
+#p3i3:hover
+{
+    .p3i31 
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
+#p3i4:hover
+{
+    .p3i41 
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
+#part4
+{
+    background-color: aqua;
+    padding-bottom: 8%;
+}
+#part4_1
+{
+    text-align: center;
+    padding-top: 8%;
+}
+#part4_1 > #top
+{
+    font-family: cursive;
+    color:darkgreen;
+    font-weight:lighter;
+}
+#part4_1 > #mid
+{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+#part4_1 > #btm
+{
+    font-size: 16px;
+}
+#con1
+{
+    display: flex;
+}
+.part4_2
+{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: 5%;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    margin-top: 3%;
+    padding: 3% 2%;
+}
+.p4i1
+{
+    width:100px;
+    height: 100px;
+}
+.p4i1 >img
+{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.p4p1
+{
+    opacity: 0.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.p4m > h3
+{
+    text-transform: uppercase;
+}
+.p4m
+{
+    padding-bottom: 3%;
+}
+.part4_2:hover
+{
+    background-color: red;
+    .p4m > h3
+    {
+        color:white
+    }
+    .p4m:last-child
+    {
+        color: white;
+    }
+}
+#part5
+{
+    display: flex;
+    background-color:lightblue;
+}
+#part5_1
+{
+    width: 80%;
+    height: 100%;
+}
+#part5_1 > img
+{
+    object-fit: fill;
+    width: 99%;
+    height: 90%;
+}
+#part5_2
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIAlflET-9BThGZT4RL1MOnsdGoT3D_BJHlg&s");
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    padding: 9.6% 5%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#part5_2 >h1
+{
+    font-size: 34px;
+}
+#part5_2 >input
+{
+    height: 30px;
+    width: 100%;
+}
+#part5_2 > button
+{
+    height: 40px;
+    width: 160px;
+    background-color: blue;
+    color: white;
+    font-weight: 300;
+}
+#part5_2 > button:hover
+{
+    background-color: black;
+}
+#p5
+{
+    background-color:lightcyan;
+    width: 99%;
+    height: 100%;
+    padding: 8% 1%;
+    display: flex;
+}
+.p5c1
+{
+    margin-left: 5%;
+    text-align: center;
+    width: 18%;
+}
+.p5c1 > .num
+{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.p5c1 > .mat
+{
+    font-size: 20px;
+    color: aqua;
+    font-style: italic;
+}
+#part6  video
+{
+    width:600px;
+    height: 40%;
+}
+#part6 h1
+{
+    font-size: 35px;
+    opacity: 0.5;
+    text-underline-offset: 200%;
+    color: fuchsia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

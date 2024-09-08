@@ -1,0 +1,73 @@
+#hd1
+{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* margin-top: -10%; */
+    padding: 0.5%;
+}
+#hd1_c
+{
+    justify-content:space-around;
+    width: 26%;
+    display:inline;
+    float:right;
+    margin-top: 1%;
+}
+#hd1_c>p
+{
+    margin: 0;
+    display: inline-block;
+    margin-left: 9%;
+    padding: 1%;
+}
+#hd1_c>p:hover
+{
+    background-color: rgb(146, 146, 176);
+    cursor: pointer;
+}
+#hd1 > h1
+{
+    margin: 0;
+    display: inline;
+}
+#sec1
+{
+    display:inline-block;
+    margin-top: 5%;
+    background-color: red;
+}
+#sec1_1
+{
+    display: inline-block;
+    width: 60%;
+    background:linear-gradient(to left,rgb(244, 161, 6),rgb(243, 226, 39));
+}
+#sec1_12
+{
+    display: inline-block;
+    /* float:inline-start; */
+    background-color: darkgray;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#sec1_2
+{
+    background-color: aqua;
+    width: 32%;
+    padding-left: 3%;
+}
+#sec1_2 > a
+{
+    display: block;
+    margin-top: 5%;
+    /* margin-left: 5%; */
+}

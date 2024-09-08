@@ -1,0 +1,67 @@
+header
+{
+    position:fixed;
+    background-color: aqua;
+    width: 100%;
+    top:0;
+}
+header  img
+{
+    width: 30px;
+    height: 30px;
+}
+#header1
+{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4%;
+    padding-left: 3%;
+    font-size: 30px;
+    margin: 0;
+    color: blue;
+}
+#sec1
+{
+    display: flex;
+    margin-top: 7%;
+    justify-content: space-between;
+    background-color: green;
+}
+#sec1 > #bg1
+{
+    padding-top: 5%;
+    padding-right: 10%;
+    width: 30%;
+    padding-bottom: 8%;
+}
+#bg1 > h1
+{
+    font-size: 55px;
+}
+#bg1 > p
+{
+    font-size: 20px;
+}
+#bg1 > p > a
+{
+    color: red;
+}
+#bg1 > button
+{
+    margin-top: 1%;
+    padding: 3% 9%;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: blue;
+}
+#bg2
+{
+    width: 50%;
+    background-color: red;
+}
+#bg2 > img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

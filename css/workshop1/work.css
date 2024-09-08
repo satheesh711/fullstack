@@ -1,0 +1,150 @@
+#background_img
+{
+    background-image: url("https://www.shutterstock.com/image-photo/boat-tree-sunset-600nw-1770893537.jpg");
+    height: 120%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing: border-box;
+}
+header
+{
+    position: fixed;
+    width: 99%;
+    box-sizing: border-box;
+    padding: 5px;
+    outline: 1px solid rgb(134, 125, 126);
+    padding-bottom: 35px;
+    box-shadow: 2px 2px rgb(134, 125, 125);
+    margin-top:0 ;
+}
+#home ,#services, #contact{
+    display: inline-block;
+    color:red;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right:5vw;
+    padding-top: 10px;
+}
+#nav_bar
+{
+    display: inline;
+    float: inline-end;
+}
+a
+{
+    color: red;
+    text-decoration: none;
+}
+#title
+{
+    color:red;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:3%;
+}
+#bg_matter
+{
+    width: 35%;
+    padding-top: 5%;
+    padding-left:5%;
+    color:darkmagenta;
+}
+#bg_matter_heading
+{
+    font-size: 85px;
+    text-transform: capitalize;
+}
+#bg_matter_para
+{
+    font-size: 20px;
+}
+#bg_matter_button
+{
+    padding: 10px 30px;
+    border-radius: 1px;
+    margin-top: 8%;
+    color: green;
+    font-size: 20px;
+    margin-bottom:20vh ;
+}
+#sec1
+{
+    box-sizing: border-box;
+    width: 96%;
+    margin: 1%;
+    height: auto;
+    margin-bottom: 30%;
+}
+#matter
+{
+    margin-top:8%;
+    width: 40%;
+    font-size: 34px;
+    margin-bottom:10%;
+}
+#parent_side_div
+{
+    box-sizing: border-box;
+    padding-bottom: 25%;
+    height:100%;
+}
+.side_div
+{
+    position: relative;
+    /* background-color:aqua; */
+    box-sizing: border-box;
+    width:32%;
+    height: 300px;
+    margin: 1% 0.5%;
+    outline:3px solid black;
+    float:inline-start;
+    z-index: -1;
+    margin-bottom: 20%;
+}
+.div_middle_img
+{
+    object-fit: contain;
+    position: absolute;
+    top:35%;
+    left: 30%;
+    width: 40%;
+    height: 45%;
+}
+.div_img_name
+{
+    position: absolute;
+    top: 75%;
+    left:42%;
+}
+.div_img_discribe
+{
+    position: absolute;
+    top: 85%;
+    left:42%;
+}
+#parent_footer_div
+{
+    box-sizing: border-box;
+    background-color: gold;
+    height:80vh;
+    width:100%;
+} 
+.footer_div
+{
+    display: inline;
+    float: left;
+    margin: 2% 2%;
+    width: 20%;
+}
+h2::first-letter
+{
+    text-decoration-line: underline;
+    text-underline-offset: 0.5em;
+}
+#last
+{
+    float: left;
+    margin-left: 20%;
+    margin-top: 10%;
+}

@@ -1,0 +1,103 @@
+#paren1
+{
+    display: flex;
+    justify-content: space-between;
+}
+.child1
+{
+    width: 50%;
+    display: flex;
+    column-gap:1%;
+}
+.child2
+{
+    display: flex;
+    column-gap: 1%;
+    width: 35%;
+    justify-content: right;
+    padding-right: 1%;
+}
+.child1 > img
+{
+    width: 10%;
+}
+.child1 > img:hover
+{
+    cursor: pointer;
+}
+.child1 > p
+{
+    padding:1% 2% ;
+    margin: 0;
+}
+.child1>p:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+.child1 > input
+{
+    margin-top: 1%;
+    width: 20%;
+    height: 55%;
+    border-radius:20px;
+}
+.child1 > span
+{
+    padding: 0.5% 1%;
+    font-size: 30px;
+}
+.child1 > span:hover
+{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.child2 > p
+{
+    padding:2%;
+    padding-right: 2%;
+    margin: 0;
+    border-radius: 20px;
+    margin-right:4% ;
+}
+.child2>p:hover
+{
+    background-color:lightgrey;
+    cursor: pointer;
+}
+.child2  img
+{
+    width: 20px;
+}
+.child2 > button
+{
+    margin-left: -3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: green; 
+}
+#b2
+{
+    background-color: orange;
+}
+#b2:hover
+{
+    background-color: green;
+}
+#paren2
+{
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    display: flex;
+    column-gap: 1%;
+}
+#paren2>p
+{
+    padding: 0.5%;
+}
+#paren2 > p:hover
+{
+    cursor: pointer;
+    background-color:black;
+}
