@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            div
+            {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                animation-name:move;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-direction:alternate;
+                animation-iteration-count: infinite;
+            }
+            @keyframes move{
+                0%
+                {
+                    transform: translateX(5px) rotate(5deg);
+                    transition: all 2s ease 0;
+                }
+                25%
+                {
+                    transform: translateX(50px) rotate(40deg);
+                    transition: all 2s ease 0;
+                }
+                50%
+                {
+                    transform: translateX(100px) rotate(150deg);
+                    transition: all 2s ease 0;
+                }
+                75%
+                {
+                    transform: translateX(50px) rotate(300deg);
+                    transition: all 2s ease 0;
+                }
+                100%
+                {
+                    transform: translateX(5px) rotate(360deg);
+                    transition: all 2s ease 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+
+</html>
