@@ -38,15 +38,7 @@
     {
         background-color: aqua;
     }
-    .food-items
-    {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    margin: 1%;
-    } 
+    
  }
  @media screen and (min-width:425px) and (max-width:768px) {
     
@@ -54,15 +46,6 @@
     {
         background-color:rgb(17, 185, 241);
     }
-    .food-items
-    {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    margin: 1%;
-    } 
  }
  @media screen and (min-width:769px) and (max-width:1024px) {
     
@@ -70,15 +53,6 @@
     {
         background-color:lightpink;
     }
-    .food-items
-    {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    margin: 1%;
-    } 
  }
  @media screen and (min-width:1025px) and (max-width:1440px) {
     
@@ -89,15 +63,6 @@
         height: 500px;
         font-size: 22px;
     }
-    .food-items
-    {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    margin: 1%;
-    } 
  }
  @media screen and (min-width:1441px) {
     
@@ -108,14 +73,5 @@
         height: 600px;
         font-size: 30px;
     }
-    .food-items
-    {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    margin: 1%;
-    } 
  }
  
