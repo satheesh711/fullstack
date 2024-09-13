@@ -4,6 +4,7 @@
 }
 .food-item
 {
+    /* width: 300px; */
     height: 300px;
     background-color:rgb(238, 231, 231);
     padding: 5px;
@@ -22,7 +23,7 @@
  .food-item-part-1 span
  {
     text-align: right;
- }
+  }
  @media screen and (max-width:424px) {
     
     .food-item
