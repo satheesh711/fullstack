@@ -2,6 +2,7 @@ body
 {
     display: flex;
     justify-content: center;
+    margin: 2% 0px;
 }
 .parent
 {
@@ -37,10 +38,117 @@ button
     display: flex;
     justify-content: center;
 }
+h2
+{
+    text-align: center;
+}
 .sec4
 {
     display: flex;
     img{
         width: 20%;
+    }
+}
+@media screen and (max-width:424px){
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    .sec2
+    {
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    .sec3_1
+    {
+        flex-direction: column;
+        .sec3_1_1
+        {
+            width: 100%;
+        }
+    }
+    .sec4
+    {
+        flex-direction: column;
+        img{
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .sec2
+    {
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    .sec3_1
+    {
+        flex-direction: column;
+        .sec3_1_1
+        {
+            width: 100%;
+        }
+    }
+    .sec4
+    {
+        flex-direction: column;
+        img{
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+    h1{
+        font-size: 36px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 29px;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width:1441px){
+    h1{
+        font-size: 36px;
+    }
+    p{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 29px;
+    }
+    button{
+        font-size: 25px;
     }
 }
