@@ -1,0 +1,46 @@
+body
+{
+    display: flex;
+    justify-content: center;
+}
+.parent
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap:20px;
+}
+.sec2
+{
+    display: flex;
+}
+button
+{
+    border: 2px solid lightblue;
+    background-color: white;
+    padding: 3% 6%;
+}
+.sec3_1
+{
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: 50%;
+    }
+}
+.sec3_1_1
+{
+    width: 33%;
+}
+.sec3_1_1 p
+{
+    display: flex;
+    justify-content: center;
+}
+.sec4
+{
+    display: flex;
+    img{
+        width: 20%;
+    }
+}
