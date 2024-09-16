@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent
+{
+ 
+    width: 40%;
+    margin: 25px;
+    background-color: aqua;
+    padding: 1%;
+}
+.child1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 6%;
+}
+.child1 i{
+    background-color: white;
+    padding: 3%;
+    border-radius: 50%;
+    font-size: 35px;
+}
+.icons
+{
+    margin-top: -29%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom:15%;
+}
+.child1 span{
+    position: absolute;
+    background-color: red;
+    color: white;
+    left: 5%;
+    top: 5%;
+    font-size: 22px;
+    padding: 1% 4%;
+}
+
+.child2_1
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 5%;
+}
+.child2_1 p{
+    margin-top: 2%;
+    font-size: 18px;
+}
+.child2_1 span
+{
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    .fa-star{
+        color:yellow
+    }
+    border-radius: 20px;
+}
+.child2> p{
+    width: 80%;
+}
+.child2 button
+{
+    margin: 5% 0px;
+    font-size: 20px;
+    padding: 3% 5%;
+    border-radius: 20px;
+    background-color: blue;
+    color: wheat;
+}
