@@ -1,0 +1,445 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    gap:1vh 10vw;
+    justify-content:center;
+    align-items: center;
+    padding: 1vw;
+    background-color: white;
+    z-index: 3;
+}
+.logo
+{
+    font-size:calc(0.5rem + 1.2vw);
+    text-decoration: none;
+    color: blue;
+}
+.logo span{
+    color:aqua;
+}
+.logo:hover
+{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(0.5rem + 0.5vw);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 1vw;
+}
+nav a:hover
+{
+    background-color:whitesmoke;
+    cursor: pointer;
+}
+section
+{
+    padding: 4% 0%;
+}
+.sec1
+{
+    background-image: url("./images/home-bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+    background-color: rgb(11, 11, 237);
+    padding: 0;
+}
+.sec1_bgcolor
+{
+    opacity: 0.7;
+    background: linear-gradient(to right ,rgb(119, 50, 118),rgb(6, 133, 237));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    height: 100%;
+}
+.sec1 img
+{
+    width:30%;
+}
+.sec1_bg1
+{
+    width:25%;
+}
+.sec1_bg1 h1
+{
+    font-size:calc(1.6rem + 0.5vw);
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sec1_bg1 p
+{
+    font-size:calc(0.6rem + 0.5vw);
+}
+.sec1_bg1 button
+{
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 8%;
+    padding: 3% 5%;
+    border-radius: 20px;
+    border-color:wheat;
+    font-size:calc(0.5rem + 0.5vw);
+
+}
+.sec2
+{
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2 h1
+{
+    font-size:calc(1.4rem + 0.5vw);
+    margin-bottom: 10px;
+}
+hr
+{
+    width:calc(3rem + 2vw);
+}
+.sec2_con
+{
+    width: 75%;
+    display: flex;
+    gap: 2%;
+    margin-top: 4%;    
+}
+.sec2_con .sec2_child
+{
+    width: 50%;
+}
+.sec2 h2
+{
+    margin-bottom: 4%;
+    font-size:calc(1.2rem + 0.5vw);
+}
+.sec2_child span
+{
+    color: rgb(82, 82, 246);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sec2_child p
+{
+    font-size:calc(0.8rem + 0.5vw);
+    margin-bottom: 3%;
+}
+.sec2_child2
+{
+    width: 50%;
+    display: flex;
+    gap: 4%;
+}
+.sec2_child2_1
+{
+    width: 50%;
+}
+.sec2_con img
+{
+    width:100%;
+}
+.sec2_child2_1 .top
+{
+    margin-top: -70px;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    padding: 5%;
+    height:auto;
+}
+.sec2_child2_1 h3{
+    color: aqua;
+    margin-bottom: 3%;
+    font-size: calc(1rem + 0.5vw);
+}
+.sec2_child2_1 p{
+    color: black;
+    font-weight: 700;
+    font-size: calc(0.8rem + 0.5vw);
+}
+.sec3
+{
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+.sec3 p
+{
+    width: 40%;
+    font-size: calc(1rem + 0.5vw);
+    text-align: center;
+}
+.sec3 button
+{
+    background-color: rgb(35, 34, 34);
+    padding: 1% 2%;
+    border-radius: 20px;
+    margin-top: 2%;
+    font-size: calc(0.6rem + 0.5vw);
+}
+.sec4
+{
+    background-color: rgb(33, 31, 31);
+    display:flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.sec4_part1{
+    width: 35%;
+    text-align: center;
+}
+.sec4_part2
+{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+.sec4_part2 img
+{
+    width: 18%;
+}
+.sec5
+{
+    background-color: rgb(16, 16, 104);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+}
+.sec5_parent
+{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(0.8rem + 0.5vw);
+    margin-top: 3%;
+}
+.sec5_child
+{
+    position: relative;
+    width: 25%;
+    background-color: white;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sec5_child h1,.sec5_child i{
+    color: aqua;
+    margin-bottom: 1%;
+    font-size: calc(1.9rem + 0.5rem);
+}
+.sec5_child h3
+{
+    color:rgb(40, 40, 109);
+    opacity: 0.8;
+    font-size: calc(1.2rem + 0.5rem);
+}
+.sec5_child p
+{
+    color: black;
+    font-size: calc(0.7rem + 0.5rem);
+    opacity: 0.7;
+}
+.sec5_child button
+{
+    color: black;
+    position:absolute;
+    top:95%;
+    left: 28%;
+    padding: 3% 6%;
+    color: white;
+    background-color: aqua;
+    font-size:calc(0.5rem + 0.5vw);
+    font-weight: 700;
+    border-radius: 20px;
+}
+.sec6
+{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    font-size: calc(0.7rem + 0.5vw);
+    text-align: center;
+    align-items: center;
+    gap:10px;
+}
+.sec6 p
+{
+    width: 46%;
+    margin-bottom:3%;
+}
+.sec6 input
+{
+    border: none;
+    width: 20%;
+    background-color: aqua;
+    border-bottom: 2px solid white;
+    padding: 1%;
+    margin-right: 2%;
+}
+.sec6 span
+{
+    display: block;
+    width: 100%;
+}
+.sec6 input:focus
+{
+    outline: none;
+}
+.sec6 input::placeholder
+{
+    color: white;
+    font-size: calc(0.5rem + 0.5vw);
+}
+.sec6 button
+{
+    background-color: white;
+    color: aqua;
+    border-radius: 20px;
+    padding: 1%; 
+    font-size: calc(0.3rem + 0.5vw);
+}
+footer
+{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p
+{
+    font-size: calc(1rem + 0.5vw);
+}
+footer span
+{
+    color: blue;
+}
+.footer_icons
+{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+@media screen and (max-width:360px){
+    nav{
+        gap:10px;
+        font-size: 8px;
+    }
+    nav a{
+        padding:0px;
+    }
+}
+@media screen and (max-width:424px){
+    .sec1_bgcolor,.sec2_con,.sec2_child2,.sec5_parent,.sec4_part2
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .sec1_bgcolor img,.sec1_bg1
+    {
+        width:70vw;
+    }
+    .sec2_child2_1
+    {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .sec2_con
+    {
+        width: 100vw;
+        text-align: center;
+        padding: 0;
+    }
+    .sec3 p{
+        width: 80vw;
+    }
+    .sec4_part1
+    {
+        width: 80%;
+    }
+    .sec5_child{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .sec6 p,.sec6 span{
+        width: 80%;
+    }
+    .sec6 button,.sec6 input
+    {
+        width: 60%;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .sec6 input::placeholder
+    {
+        font-size: 15px;
+    }
+    .sec4_part2 img{
+        width: 80%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer_icons
+    {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .sec2_con
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .sec2_con
+    {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .sec3 p{
+        width: 80vw;
+    }
+    .sec4_part1
+    {
+        width: 80%;
+    }
+}
