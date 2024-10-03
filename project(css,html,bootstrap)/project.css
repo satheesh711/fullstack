@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 header
 {
@@ -20,7 +21,7 @@ header
 }
 .logo
 {
-    font-size:calc(0.5rem + 1.2vw);
+    font-size:calc(0.4rem + 1.2vw);
     text-decoration: none;
     color: blue;
 }
@@ -81,13 +82,13 @@ section
 }
 .banner_bg1 h1
 {
-    font-size:calc(1.6rem + 0.5vw);
+    font-size:calc(1rem + 0.5vw);
     margin-bottom: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .banner_bg1 p
 {
-    font-size:calc(0.6rem + 0.5vw);
+    font-size:calc(0.4rem + 0.5vw);
 }
 .banner_bg1 button
 {
@@ -97,7 +98,7 @@ section
     padding: 3% 5%;
     border-radius: 20px;
     border-color:wheat;
-    font-size:calc(0.5rem + 0.5vw);
+    font-size:calc(0.35rem + 0.5vw);
 
 }
 .welcome
@@ -109,12 +110,13 @@ section
 }
 .welcome h1
 {
-    font-size:calc(1.4rem + 0.5vw);
-    margin-bottom: 10px;
+    font-size:calc(1rem + 0.5vw);
 }
 hr
 {
     width:calc(3rem + 2vw);
+    border-top: 3px solid white !important;
+    opacity: 0.8 !important;
 }
 .welcome_con
 {
@@ -130,7 +132,7 @@ hr
 .welcome h2
 {
     margin-bottom: 4%;
-    font-size:calc(1.2rem + 0.5vw);
+    font-size:calc(0.7rem + 0.5vw);
 }
 .welcome_child span
 {
@@ -139,7 +141,7 @@ hr
 }
 .welcome_child p
 {
-    font-size:calc(0.8rem + 0.5vw);
+    font-size:calc(0.5rem + 0.5vw);
     margin-bottom: 3%;
 }
 .welcome_child2
@@ -167,12 +169,12 @@ hr
 .welcome_child2_1 h3{
     color: aqua;
     margin-bottom: 3%;
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(0.7rem + 0.5vw);
 }
 .welcome_child2_1 p{
     color: black;
     font-weight: 700;
-    font-size: calc(0.8rem + 0.5vw);
+    font-size: calc(0.5rem + 0.5vw);
 }
 .learn
 {
@@ -185,16 +187,16 @@ hr
 .learn p
 {
     width: 40%;
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     text-align: center;
 }
 .learn button
 {
     background-color: rgb(35, 34, 34);
-    padding: 1% 2%;
-    border-radius: 20px;
+    padding: 0.5%;
+    border-radius: 25px;
     margin-top: 2%;
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.4rem + 0.5vw);
 }
 .screenshot
 {
@@ -202,11 +204,19 @@ hr
     display:flex;
     flex-direction: column;    
     align-items: center;
+
 }
 .screenshot_part1{
     width: 35%;
     text-align: center;
 }
+.screenshot_part1 h1{
+    font-size: calc(1rem + 0.5vw);
+}
+.screenshot_part1 p{
+    font-size: calc(0.3rem + 0.5vw);
+}
+
 .screenshot_part2
 {
     display:flex;
@@ -239,8 +249,12 @@ hr
     gap: 10px;
     justify-content: center;
     text-align: center;
-    font-size: calc(0.8rem + 0.5vw);
     margin-top: 3%;
+}
+.pricing h1
+{
+    font-size: calc(1.2rem + 0.5vw);
+    margin-bottom: -10px;
 }
 .pricing_child
 {
@@ -255,47 +269,62 @@ hr
 .pricing_child h1,.pricing_child i{
     color: aqua;
     margin-bottom: 1%;
-    font-size: calc(1.9rem + 0.5rem);
+    font-size: calc(0.8rem + 0.5rem);
 }
 .pricing_child h3
 {
     color:rgb(40, 40, 109);
     opacity: 0.8;
-    font-size: calc(1.2rem + 0.5rem);
+    font-size: calc(0.7rem + 0.5rem);
 }
 .pricing_child p
 {
     color: black;
-    font-size: calc(0.7rem + 0.5rem);
+    font-size: calc(0.3rem + 0.5rem);
     opacity: 0.7;
 }
 .pricing_child button
 {
     color: black;
     position:absolute;
-    top:95%;
+    top:97%;
     left: 28%;
     padding: 3% 6%;
     color: white;
     background-color: aqua;
-    font-size:calc(0.5rem + 0.5vw);
+    font-size:calc(0.3rem + 0.5vw);
     font-weight: 700;
     border-radius: 20px;
 }
 .subscribe
 {
+    background-image: url("./images/newsletter-bg.jpg");
+    background-size:cover;
+    background-position: 0vh;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+.newsletter
+{
+    padding: 4% 0%;
+    background-color: aqua;
+    opacity: 0.7;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    font-size: calc(0.7rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     text-align: center;
     align-items: center;
     gap:10px;
+}
+.newsletter h2{
+    font-size: calc(1.1rem + 0.5vw);
 }
 .subscribe p
 {
     width: 46%;
     margin-bottom:3%;
+    font-size: calc(0.4rem + 0.5vw);
+
 }
 .subscribe input
 {
@@ -326,7 +355,7 @@ hr
     color: aqua;
     border-radius: 20px;
     padding: 1%; 
-    font-size: calc(0.3rem + 0.5vw);
+    font-size: calc(0.2rem + 0.5vw);
 }
 footer
 {
@@ -334,12 +363,10 @@ footer
     display: flex;
     justify-content: space-between;
     padding: 4%;
-    justify-content: space-around;
-    align-items: center;
 }
 footer p
 {
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
 }
 footer span
 {
@@ -349,7 +376,7 @@ footer span
 {
     display: flex;
     gap: 40px;
-    font-size: 20px;
+    font-size:calc(0.5rem + 0.5ww);
 }
 @media screen and (max-width:360px){
     nav{
