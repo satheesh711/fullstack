@@ -18,7 +18,6 @@ arr.pop()
 console.log(arr)
 
 // How do you add an element to the beginning of an array?
-
 console.log("fourth task")
 arr.unshift(0)
 console.log(arr)
