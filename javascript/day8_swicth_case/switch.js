@@ -1,5 +1,6 @@
 // 1.Use switch case and take Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday as cases and any expression related to case 
-Day=prompt("Enter any day(Monday to sunday)")
+// Day=prompt("Enter any day(Monday to sunday)")
+Day="Thursday"
 switch (Day) {
     case "Monday":
         console.log("This is Monday and week day")
