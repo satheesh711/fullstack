@@ -1,5 +1,12 @@
-for(var a=0;a<3;a++)
+switch(3)
 {
- console.log(a)   
+    case 1:console.log("1")
+    break
+    case 1:console.log("2")
+    break
+    case 1:console.log("4")
+    break
+    default:
+     console.log("d")
+
 }
-console.
