@@ -1,12 +1,10 @@
-switch(3)
-{
-    case 1:console.log("1")
-    break
-    case 1:console.log("2")
-    break
-    case 1:console.log("4")
-    break
-    default:
-     console.log("d")
-
+var age = 20;
+if (age >= 18) {
+  if (age >= 21) {
+    console.log("Eligible for driving and drinking.");
+  } else {
+    console.log("Eligible for driving only.");
+  }
+} else {
+  console.log("Not eligible for driving or drinking.");
 }
