@@ -48,7 +48,7 @@ let imgs = document.getElementsByTagName("img")
 for(let i=0;i<imgs.length;i++)
 {
     imgs[i].style.width='100%'
-    imgs[i].style.height='80%'
+    imgs[i].style.height='70%'
 }
 
 document.body.style.display='flex'
