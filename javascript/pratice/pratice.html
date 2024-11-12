@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./pratice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <script src="./pratice.js"></script>
-    <h1>satheesh</h1>
+    <div id="con">
+        <input type="password" id="pswd" placeholder="Enter here password" onkeypress="check(event)" onkeydown="backsp(event)">
+        <i class="fa-solid fa-eye-slash" id="eye"></i>
+    </div>
+    <div id="matter">
+       <p id="cap"> at least 1 capitale letter</p>
+       <p id="low">at least 1 lowercase letter</p>
+        <p id="numb">at least 1 number </p>
+        <p id="spc">at least 1 spcial character. </p>
+        <p id="len">minimum 8 characters</p>
+    </div>
+    <script src="pratice.js"></script>
 </body>
 </html>
