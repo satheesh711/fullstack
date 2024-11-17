@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="inp">0</div>
+    <div id="con">
+        <div>
+            <button onclick="cl()">AC</button>
+            <button onclick="entering('%')">%</button>
+            <button onclick="bs()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="entering('/')">/</button>
+        </div>
+        <div>
+            <button onclick="entering('7')">7</button>
+            <button onclick="entering('8')">8</button>
+            <button onclick="entering('9')">9</button>
+            <button onclick="entering('*')">*</button>
+        </div>
+        <div>
+            <button onclick="entering('4')">4</button>
+            <button onclick="entering('5')">5</button>
+            <button onclick="entering('6')">6</button>
+            <button onclick="entering('-')">-</button>
+        </div>
+        <div>
+            <button onclick="entering('1')">1</button>
+            <button onclick="entering('2')">2</button>
+            <button onclick="entering('3')">3</button>
+            <button onclick="entering('+')">+</button>
+        </div>
+        <div>
+            <button onclick="entering('00')">00</button>
+            <button onclick="entering('0')">0</button>
+            <button onclick="entering('.')">.</button>
+            <button onclick="res()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

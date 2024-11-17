@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+#inp{
+    background-color: black;
+    width: 20%;
+    text-align: end;
+    padding: 2% 3%;
+}
+#con{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+button
+{
+    width: 23%;
+    height: 5vw;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(116, 111, 111, 0.267);
+}
