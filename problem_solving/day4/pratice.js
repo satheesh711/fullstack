@@ -1,4 +1,11 @@
-// input: Enter no. of series: 5
+// 1) Leet code problem
+// https://leetcode.com/problems/roman-to-integer/
+
+//solution link
+//https://leetcode.com/problems/roman-to-integer/submissions/1453653776
+
+
+//2) input: Enter no. of series: 5
 // output: 0+1+1+2+3 = 7
 
 n=+prompt("enter number")
