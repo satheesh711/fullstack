@@ -35,7 +35,7 @@ else if(coun==1)
 {
    let cls= document.getElementsByClassName('dis')
     cls[cls.length-1].style.display='block'
-    cls.className=''
+    cls.className.remove('dis')
     coun=0
 }
 }
