@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        background-color: aqua;
+    }
+    #con{
+        background-color: white;
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        width:max-content;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+    }
+    button
+    {
+        width:max-content;
+        background-color: rgb(119, 226, 119);
+        color: rgb(6, 6, 6);
+        font-size:19px;
+        padding: 3% 7%;
+    }
+    p{
+        font-size: 22px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+</style>
+<body>
+    <div id="con">
+        <h1>COUNTER APP</h1>
+        <p id="cou">0</p>
+        <button id="inc">increament</button>
+        <button id="dec">decreament</button>
+        <button id="res">reset</button>
+        <button id="st">start</button>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
