@@ -1,0 +1,19 @@
+body
+{
+    background-color: aqua;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input
+{
+    width: 25vw;
+    height: 4vh;
+    font-size: 24px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
