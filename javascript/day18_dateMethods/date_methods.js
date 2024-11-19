@@ -6,7 +6,7 @@ inp.onkeyup = function (e) {
         let yy = Number(str.slice(0, 4))
         let mon = Number(str.slice(5, 7))
         let dd = Number(str.slice(8))
-        let newdate = new Date(yy, mon-1, dd,11,46)
+        let newdate = new Date(yy, mon-1, dd)
         let b = setInterval(function () {
 
             let date = new Date();
