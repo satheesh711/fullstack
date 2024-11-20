@@ -1,11 +1,10 @@
 let signin = document.getElementById('signup')
-let useremail=document.getElementById('email')
+let useremail=document.getElementById('email1')
 let userpassword  = document.getElementById('pswd')
 
 signin.addEventListener('click',(event)=>
 {
   
-    event.preventDefault()
     if(useremail.checkValidity() && userpassword.checkValidity()){
     localStorage.setItem('email',useremail.value)
     localStorage.setItem('password',userpassword.value)
@@ -15,7 +14,7 @@ signin.addEventListener('click',(event)=>
     }
     else
     {
-        event.preventDefault()
+        // event.preventDefault()
         document.querySelector('form').reportValidity();
     }
 })

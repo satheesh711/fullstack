@@ -41,7 +41,7 @@ button
     font-size: 22px;
     background-color: green;
     color: white;
-    width: 30%;
+    width:auto;
     padding: 2%;
     border-radius: 10px;
 }
