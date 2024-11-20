@@ -9,14 +9,14 @@ signin.addEventListener('click',(event)=>
     if(useremail.checkValidity() && userpassword.checkValidity()){
     localStorage.setItem('email',useremail.value)
     localStorage.setItem('password',userpassword.value)
+    useremail.value=""
     alert('successful')
     window.location.href="login.html"
-    useremail.value=" "
     }
     else
     {
         event.preventDefault()
-        alert('enter required fileds')
+        document.querySelector('form').reportValidity();
     }
 })
 
