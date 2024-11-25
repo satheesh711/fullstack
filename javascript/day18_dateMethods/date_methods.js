@@ -7,8 +7,8 @@ inp.onkeyup = function (e) {
         let mon = Number(str.slice(5, 7))
         let dd = Number(str.slice(8))
         let newdate = new Date(yy, mon-1, dd)
+        if(newdate-(new Date)>0){
         let b = setInterval(function () {
-
             let date = new Date();
             let ms = newdate - date
             if (ms < 0) {
@@ -32,6 +32,7 @@ inp.onkeyup = function (e) {
                 coun.textContent = a
             }
         }, 1)
+    }
     }
 }
 
