@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 5px;
+        }
+        body {
+            display: grid;
+            gap: 40px;
+        }
+
+        summary {
+            font-size: 20px;
+            font-weight: 900;
+        }
+        h1 {
+            text-align: center;
+        }
+        pre{
+            font-size: 16px;
+            text-align: left;
+            color: white;
+            background-color:rgb(15, 15, 94);
+        }
+        p
+        {
+            font-size: 16px;
+            padding-left: 8%;
+            color: white;
+            background-color: rgb(18, 18, 86);
+        }
+    </style>
+</head>
+<body>
+    <h1>html Interview questions and ans</h1>
+    <details>
+        <summary>1.what is html?</summary>
+        <p>HTML stands for Hyper Text Markup Language <br>
+            HTML is the standard markup language for Web pages <br>
+            HTML elements are the building blocks of HTML pages <br>
+            HTML elements are represented by < > tags
+            </p>
+    </details>
+    <details>
+        <summary>2.what is doctype in html?</summary>
+        <p>Doctype is tells this document to be HTML5 version. <br>
+            It is used tell which version of html we using in that document.</p>
+    </details>
+    <details>
+        <summary>3.what is tag? How many types of tags?</summary>
+        <p>tag is used to indicate the beginning and end of an HTML element in an HTML document. <br>
+            We have two type tags in html <br>
+            Those are:<br>
+            1.paired tags: paired tags contain both opening and closing tag.<br>
+            Paired tags will be having content between opening tag and closing tag
+            </p>
+    </details>
+    <details>
+        <summary>4.what is an element in html?</summary>
+        <p>Element is consisting of opening tag, closing tag and content between the opening and closing tags.</p>
+    </details>
+    <details>
+        <summary>5.what is difference between tag and element in html?</summary>
+        <p>Main difference is tag is a part of element and element is section of a html document. <br>
+            Tag: it is consist only opening and closing tags.it tells start and end of the element. <br>
+            Element: it is consisting of opening tag, closing tag and content between them.  <br>
+            </p>
+    </details>
+    <details>
+        <summary>6.what is attribute?</summary>
+        <p>It gives extra information about tag.it is used inside the opening tag and it tells how the tag behaves. <br>
+            Ex. text-align center means we changing the behaviour of tag from left starting to center starting. <br>
+            </p>
+    </details>
+    <details>
+        <summary>7.what is difference between the href and src attributes.</summary>
+        <p>Href: it is used to define a link to the targeted resource and allowing user to navigate to that resource when the link is clicked. ex. a <br>
+            Src: it is used to embedded the targeted content into webpage. ex. img, iframe.
+            </p>
+    </details>
+    <details>
+        <summary>8.what is attribute in html tag?</summary>
+        <p>We have one attribute in html tag that is lang.it is used specify the language of the text used in webpage. </p>
+    </details>
+    <details>
+        <summary>9.what is marquee tag?</summary>
+        <p>It is used to create scrolling effect for content (img or text).</p>
+    </details>
+    <details>
+        <summary>10.define list types in html?</summary>
+        <p>In HTML, there are three main types of lists: <br>
+            Ordered List: Displays items in a numbered sequence (e.g., 1, 2, 3).<br>
+            
+            
+            Unordered List (): Displays items with bullet points.<br>
+            
+            
+            Description List (): Used for listing terms and their descriptions.<br>
+            
+            
+            Each type is used based on whether you need numbered, bulleted, or descriptive content.
+            </p>
+    </details>
+    <details>
+        <summary>11.what are the formatting tags?</summary>
+        <p>Formatting tags in HTML are used to control the appearance, style, and layout of content on a web page.it is used to change the behaviour of text. <br>
+            Bold: b <br>
+            Strong: strong <br>
+            Italic: i <br>
+            Underlined: u <br>
+            Strikethrough: del or s <br>
+            Superscript:  sup <br>
+            Subscript:  sub <br>
+            Marked: mark  <br>
+            Smaller: small <br>
+            Inserted: ins <br>
+            </p>
+    </details>
+    <details>
+        <summary>12.what is the b and strong tags?</summary>
+        <p>Unlike the b tag, which is primarily used for stylistic purposes to apply bold formatting, the strong tag carries semantic meaning <br>
+        b: Purely for bold styling (visual). <br>
+        strong: For bold styling with semantic emphasis (importance) (seo).
+        </p>
+    </details>
+    <details>
+        <summary>13.what is SEO?</summary>
+        <p>SEO (Search Engine Optimization) is the practice of optimizing a website or web content to improve its visibility and ranking on search engine results pages (SERPs), such as Google. The goal of SEO is to increase organic (non-paid) traffic to a website by making it more attractive to search engines.
+        </p>
+    </details>
+    <details>
+        <summary>14.can you any seo methods? ( sem,meta, class, heading, img, keywords,description, link building )</summary>
+        <p>Here are some SEO methods in short: <br>
+            Keyword Research: Identify relevant, high-traffic keywords. <br>
+            On-Page Optimization: Use keywords in titles, meta descriptions, headers, and URLs. <br>
+            Quality Content: Create valuable, keyword-rich content that meets user intent. <br>
+            Mobile Optimization: Ensure your site is mobile-friendly. <br>
+            Improve Site Speed: Optimize images and code for faster load times. <br>
+            Backlink Building: Get high-quality backlinks from authoritative sites. <br>
+            User Experience (UX): Improve site navigation and design for a better experience. <br>
+            Technical SEO: Fix crawl errors, use structured data, and submit an XML sitemap. <br>
+            Local SEO: Optimize for local searches with Google My Business.
+            </p>
+    </details>
+    <details>
+        <summary>15.how many type of elements we have in html? </summary>
+        <p>In HTML, there are two main types of elements: <br>
+            1. Block-Level Elements <br>
+            These elements start on a new line and take up the full width available. <br>
+            Common examples: <br>
+            div: A generic container. <br>
+            2. Inline Elements <br>
+            These elements do not start on a new line and only take up as much width as necessary. <br>
+            Common examples: <br>
+            span: A generic inline container.</p>
+    </details>
+    <details>
+        <summary>16.what is d/f b/w block elements vs inline elements?</summary>
+        <p>Block: <br>
+           Always starts on a new line before and after the element itself. <br>
+           It occupy the full width of the webpage or entire horizontal space within the their container. <br>
+           It have default margin top and bottom values to create space between them and other elements. <br>
+           Inline: <br>
+           Always starts on same line with other inline elements. <br>
+           It occupies the width according to their content. <br>
+           Inline elements do not have default value of margin top and bottom. <br>
+           </p>
+    </details>
+    <details>
+        <summary>17.what is semantic vs non-semantic elements?</summary>
+        <p>Semantic Elements: <br>
+            Semantic elements clearly describe their meaning in a way that both the browser and developers can understand. These elements define the structure and content of a webpage, making it more readable and accessible, especially for search engines and screen readers. <br>
+            Examples: <br>
+            header: Defines a header section of a webpage. <br>
+            nav: Represents a navigation section. <br>
+            article: Represents an independent piece of content. <br>
+            section: Defines a section in a document. <br>
+            footer: Represents the footer of a page. <br>
+            Purpose: They improve code readability and SEO by making the structure of the page clearer. <br>
+            Non-Semantic Elements: <br>
+            Non-semantic elements do not provide any meaning about their content. They are generic containers, typically used for styling and layout purposes. <br>
+            Examples: <br>
+            div: A generic block-level container. <br>
+            span: A generic inline container. <br>
+            Purpose: They don't describe the content and are often used for styling or grouping elements when no specific meaning is needed. <br>
+            </p>
+    </details>
+    <details>
+        <summary>18. d/f b/w div and span?</summary>
+        <p>Differences Between div and span: <br>
+            Purpose: <br>
+            div: Block-level element used for grouping larger content or sections. <br>
+            span: Inline element used for styling small portions of text. <br>
+            Display Behavior: <br>
+            div: Starts on a new line and takes up the full width (causes line breaks). <br>
+            span: Stays inline with surrounding text and only takes as much width as needed. <br>
+            Usage: <br>
+            div: Ideal for larger layouts and sections. <br>
+            span: Best for applying styles to a small segment within text. <br>
+            </p>
+    </details>
+    <details>
+        <summary>19.table vs li ?</summary>
+        <p>Differences Between table and li: <br>
+            Purpose: <br>
+            table: Displays tabular data in rows and columns. <br>
+            li: Represents an individual item in a list (ordered or unordered). <br>
+            Structure: <br>
+            table: Requires tr, th, and td for structure. <br>
+            li: Used within ul or ol without additional structure. <br>
+            Display Behavior: <br>
+            table: Shows data in a grid format. <br>
+            li: Displays items as a list, usually with bullets or numbers. <br>
+            Use Cases: <br>
+            table: Best for complex data presentations. <br>
+            li: Ideal for simple lists or menus. <br>
+            </p>
+    </details>
+    <details>
+        <summary>20.what are meta tags?</summary>
+        <p>Meta tags are HTML elements in the <head> section that provide metadata about a web page. They help search engines and <br> browsers understand the content but are not visible to users. Key types include the description (summarizes content), keywords (lists relevant terms), and viewport (controls mobile layout). <br> Other important tags are charset (defines character encoding) and robots (guides search engine behavior). Overall, meta tags enhance SEO and user experience.
+        </p>
+    </details>
+    <details>
+        <summary>21.what is use of forms in html?</summary>
+        <p>Forms in HTML are used to collect user input and facilitate data submission to a server for processing. <br> They play a crucial role in web applications and user interaction. Here are the key uses of forms in HTML: <br>
+            Data Collection: Forms allow users to input various types of data, such as text, numbers, dates, and selections (e.g., checkboxes, radio buttons). <br>
+            User Registration: Forms are commonly used for user registration, enabling users to create accounts on websites by providing personal information like names, email addresses, and passwords. <br>
+            Search Functionality: Search forms allow users to input queries to find specific content or products on a website. <br>
+            Feedback and Contact: Forms enable users to submit feedback, inquiries, or contact messages, facilitating communication between users and website administrators. <br>
+            Payment Processing: E-commerce websites use forms to collect payment information and shipping details during transactions. <br>
+            Summary: <br>
+            HTML forms are essential for gathering user input and facilitating various interactions on websites, making them a fundamental component of web development.
+            </p>
+    </details>
+    <details>
+        <summary>22.what are the form elements?</summary>
+        <p>Key HTML Form Elements: <br>
+            Form Container: <br>
+            form: Defines the form, including action and method attributes. <br>
+            Input Elements: <br>
+            Text: input type="text" for single-line input. <br>
+            Password: input type="password" for masked input. <br>
+            Email: input type="email" for email addresses. <br>
+            Number: input type="number" for numeric input. <br>
+            Date: input type="date" for date selection. <br>
+            Button Elements: <br>
+            Submit: input type="submit" to submit the form. <br>
+            Reset: input type="reset" to reset form fields. <br>
+            Selection Elements: <br>
+            Checkbox: input type="checkbox" for multiple selections. <br>
+            Radio Button: input type="radio" for single option selection. <br>
+            Select Dropdown: select for a dropdown list. <br>
+            Text Area:
+            textarea: For multi-line text input. <br>
+            File Upload:
+            File Input: input type="file" for file uploads. <br>
+            Label:
+            label: Describes input elements for accessibility. <br>
+            Summary <br>
+            These elements facilitate user input and interaction in web forms.
+            </p>
+    </details>
+    <details>
+        <summary>23.what are form attr? </summary>
+        <p>HTML form attributes: <br>
+            action: URL for data submission. <br>
+            method: How data is sent (GET or POST). <br>
+            enctype: Data encoding type (e.g.,multipart/form-data for file uploads). <br>
+            name: Identifies the form for scripting. <br>
+            target: Where to display the response (e.g., _blank for a new tab). <br>
+            autocomplete: Enables or disables browser auto-fill. <br>
+            novalidate: Disables automatic form validation. <br>
+            These attributes enhance form functionality and user experience.
+            </p>
+    </details>
+    <details>
+        <summary>24.what are the iframes?</summary>
+        <p>Iframes (inline frames) are HTML elements used to embed another webpage within the current document. They allow you to display content like videos, maps, or third-party applications directly on your page.
+        </p>
+    </details>
+    <details>
+        <summary>25.what is the advantage of collapsing in whitespace?</summary>
+        <p>Collapsing whitespace in HTML refers to how browsers treat multiple spaces, tabs, and line breaks as a single space when rendering content. <br>
+            Advantages: <br>
+            Simplified Layout: Reduces clutter in the source code. <br>
+            Improved Readability: Makes the code easier to read and maintain. <br>
+            Reduced File Size: Minimizes unnecessary characters, slightly improving loading times. <br>
+            Consistent Rendering: Ensures uniform display across different browsers and devices. <br>
+            Better Formatting Control: Encourages the use of CSS for layout rather than relying on whitespace in HTML. <br>
+            </p>
+    </details>
+    <details>
+        <summary>26.what are the html entities?</summary>
+        <p>HTML entities are special codes used to represent characters that have specific meanings in HTML or are not easily typed. They begin with an ampersand (&) and end with a semicolon (;). <br>
+            Key Points: <br>
+            Format: Named entities (e.g., &nbsp; for non-breaking space) and numeric entities. <br>
+            Use Cases: Display special characters, avoid syntax issues, and include symbols from different languages.
+            </p>
+    </details>
+    <details>
+        <summary>27.what re the features of html 5?</summary>
+        <p>HTML5 introduces several features and enhancements that improve web development and user experience. Here are the key features: <br>
+            New Semantic Elements: Introduces elements like header, footer, article, section, and nav for better document structure and SEO. <br>
+            Multimedia Support: Native support for audio and video with audio and video elements, eliminating the need for plugins like Flash. <br>
+            Canvas Element: Provides the canvas element for drawing graphics and animations via JavaScript, enabling dynamic visual content. <br>
+            Form Enhancements: New input types (e.g., email, date, range) and attributes (e.g., placeholder, required) improve form functionality and validation. <br>
+            Local Storage: Allows web applications to store data locally in the browser using localStorage and sessionStorage, enabling offline access and better performance. <br>
+            Geolocation API: Provides a standardized way to access a user's geographical location, useful for location-based services. <br>
+            Improved Accessibility: Enhancements for better accessibility features, including ARIA roles and attributes. <br>
+            Responsive Design Support: New attributes and elements (like picture and srcset) facilitate responsive web design for various devices and screen sizes. <br>
+            </p>
+    </details>
+    <details>
+        <summary>28.are the elements and tags are same thing in html?</summary>
+        <p>In HTML, tags and elements are related but distinct: <br>
+            Tags: The markup used to create elements, enclosed in angle brackets (e.g., p for opening and p for closing). <br>
+            Elements: A complete structure that includes the opening tag, content, and closing tag (e.g., p Hello, World! p).</p>
+    </details>
+    <details>
+        <summary>29.what is git???</summary>
+        <p>Git is a distributed version control system used to track changes in source code during software development. <br>
+            Key Points: <br>
+            Version Control: Keeps a history of changes and allows reverting to previous versions. <br>
+            Branching and Merging: Enables independent work on features or fixes and combines changes seamlessly. <br>
+            Distributed: Each developer has a complete copy of the repository, allowing offline work. <br>
+            Collaboration: Facilitates teamwork while managing code conflicts. <br>
+            Efficiency: Fast operations for committing changes and merging branches. <br>
+            Open Source: Free to use and supported by a large community.
+            </p>
+    </details>
+    <details>
+        <summary>30.what is d/f b/w git vs github? </summary>
+        <p>Git and GitHub are related but serve different purposes: <br>
+            Git <br>
+            Definition: A distributed version control system for tracking changes in source code. <br>
+            Functionality: Manages code versions locally; allows branching, merging, and offline work. <br>
+            Usage: Operated through the command line or GUIs.
+            GitHub <br>
+            Definition: A cloud-based platform that hosts Git repositories. <br>
+            Functionality: Facilitates collaboration, sharing, and project management among developers. <br>
+            Features: Offers issue tracking, pull requests, and other collaboration tools; requires internet access. <br>
+            </p>
+    </details>
+    <details>
+        <summary>31.what is local repo and github repo?</summary>
+        <p>A local repository and a GitHub repository both store your project files but in different locations: <br>
+            Local Repository <br>
+            Definition: A Git repository stored on your computer or local machine. <br>
+            Purpose: Used to track changes and manage versions of your project locally, without needing an internet connection. <br>
+            Usage: You can clone repositories, make commits, and create branches on your local system. However, to share your changes with others, you need to push them to a remote repository (e.g., on GitHub). <br>
+            GitHub Repository <br>
+            Definition: A Git repository hosted on GitHub's cloud platform. <br>
+            Purpose: Used for sharing your code, collaborating with others, and managing your project online. <br>
+            Usage: Once changes are made in your local repository, they can be pushed to GitHub for others to access, collaborate on, and review. <br>
+            </p>
+    </details>
+    <details>
+        <summary>32.what is the command to initialize the git to your local directory?  </summary>
+        <p>git init  </p>
+    </details>
+    <details>
+        <summary>33.what is the command to use in order to move the changes  to staged area? </summary>
+        <p>git add . <br>
+           Git add file-name </p>
+    </details>
+    <details>
+        <summary>34.what is the command to use to commit all the staged change local repo?</summary>
+        <p>git commit -m "Your commit message here"</p>
+    </details>
+    <details>
+        <summary>35.what is the d/f b/ the push and pull in git???      </summary>
+        <p>Push uploads local changes to a remote repository, while pull downloads and integrates changes from a remote repository to your local repository.</p>
+    </details>
+    <details>
+        <summary>36.what are the ways of getting code from github?</summary>
+        <p>There are several ways to get code from GitHub, depending on your needs. Here are the main methods: <br>
+            1. Cloning a Repository <br>
+            Description: Creates a local copy of a GitHub repository on your machine. <br>
+            2. Downloading as a ZIP File <br>
+            Description: Download the entire repository as a ZIP file, which can be extracted locally. <br>
+            How to Do It: <br>
+            Go to the repository page on GitHub. <br>
+            Click on the green "Code" button. <br>
+            Select "Download ZIP."<br>
+            3. Using GitHub Desktop<br>
+            Description: A graphical interface for Git that allows you to clone repositories and manage them easily.<br>
+            How to Do It:<br>
+            Install GitHub Desktop.<br>
+            Sign in with your GitHub account.<br>
+            Use the "Clone a repository" option to get the code.<br>
+            4. Forking a Repository<br>
+            Description: Creates a personal copy of someone else's repository under your GitHub account, allowing you to make changes without affecting the original.<br>
+            How to Do It:<br>
+            Go to the repository you want to fork on GitHub.<br>
+            Click the "Fork" button in the top right corner.<br>
+            </p>
+    </details>
+    <details>
+        <summary>37.know the d/f b/w the all type of getting code?</summary>
+        <p>Cloning provides full version control capabilities, allowing for collaboration and changes to be tracked. <br>
+            Downloading as ZIP is a simple way to access code without version control features, making it easy but limiting for collaboration. <br>
+            GitHub Desktop offers a user-friendly interface for Git, making it easier for those unfamiliar with command-line tools, but it still relies on Git. <br>
+            Forking is ideal for contributing to projects, as it allows you to work independently while keeping the ability to propose changes back to the original repository.
+            </p>
+    </details>
+    <details>
+        <summary>38.what is the flow of git???</summary>
+        <p>Initialize or Clone: Start a new repository or clone an existing one. <br>
+            Create a Branch (optional): Make a new branch for feature development. <br>
+            Make Changes: Edit files in your local repository. <br>
+            Stage Changes: Add modified files to the staging area. <br>
+            Commit Changes: Save your changes with a descriptive message. <br>
+            Push Changes: Upload your commits to the remote repository. <br>
+            Pull Changes: Fetch and integrate updates from the remote repository. <br>
+            Merge Changes: Combine your feature branch into the main branch when complete. <br>
+            Resolve Conflicts: Fix any merge conflicts that arise. <br>
+            Repeat: Continue the workflow for ongoing development.
+
+        </p>
+    </details>
+    <details>
+        <summary>39.what is git status?        </summary>
+        <p> The git status command is used in Git to display the current state of your working directory and staging area. It provides valuable information about the changes in your repository. <br>
+            Using git status helps you understand the current state of your repository, guiding you on what actions to take next, whether it's staging changes, committing, or tracking untracked files. It’s a crucial command for effective Git workflow management.
+        </p>
+    </details>
+    <details>
+        <summary>40.what is the command which we need to use to create a branch?</summary>
+        <p>git branch branch-name        </p>
+    </details>
+    <details>
+        <summary>41.what is the command to check the branches in git repo? </summary>
+        <p>git branch </p>
+    </details>
+    <details>
+        <summary>42.what is the command to switch b/w the branches?</summary>
+        <p> git checkout -b branch-name        </p>
+    </details>
+    <details>
+        <summary>43.what is the command to check no of commits?        </summary>
+        <p>git log --oneline <br>
+            git log
+             </p>
+    </details>
+    <details>
+        <summary>44.what is the cd command and why we need to ue it?
+        </summary>
+        <p>The cd command (change directory) is used in command-line interfaces to navigate between directories (folders) in the file system.
+        </p>
+    </details>
+    <details>
+        <summary>45.ls command?
+        </summary>
+        <p> The ls command is used in command-line interfaces (like Terminal in macOS/Linux) to list the contents of a directory.
+        </p>
+    </details>
+    <details>
+        <summary>46.cls command?
+        </summary>
+        <p>The cls command is used in command-line interfaces (like Command Prompt in Windows) to clear the screen of all previous commands and outputs.
+        </p>
+    </details>
+    <details>
+        <summary>47.what is command to check whether git is in my machine or not?
+        </summary>
+        <p>git --version
+        </p>
+    </details>
+</body>
+</html>
