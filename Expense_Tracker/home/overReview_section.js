@@ -20,7 +20,6 @@ function overall_expenses_table() {
         });
     }
     else {
-        overall_table_items.innerHTML = ""
         overall_table_items.textContent = "No data available"
     }
 }
@@ -74,7 +73,8 @@ function overall_expenses_summary() {
         update_expenses_piechart(catagory, "overall_chart", chat_summary)
     }
     else {
-        overall_expenses_summary.textContent = "data not available"
+        document.getElementById("overall_summary_con").innerHTML=""
+        document.getElementById("overall_summary_con").innerHTML= "data not available"
     }
 }
 function sortdata_amount(data) {
@@ -135,7 +135,11 @@ function bar_design(elementid, catagories, totals, bar) {
     });
 }
 function create_month_details() {
-    let data = expensegetuserfn()[0].expenses
+    let data = expensegetuserfn()
+    if(data.length)
+    {
+        data=data[0].expenses
+    }
     let months = get_Month_names()
     let catagories = ["Food", "Entertainment", "Transport", "Other"]
     for (l = 0; l < catagories.length; l++) {

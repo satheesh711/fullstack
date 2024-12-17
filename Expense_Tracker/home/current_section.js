@@ -75,7 +75,7 @@ function update_expenses_items() {
 
 function update_expenses_summary(elementid) {
     let expense_data = expensegetuserfn()
-    if (expense_data.length <= 0 && expense_data[0].expenses.length) {
+    if (! (expense_data.length)  ) {
         defultsummarytablefn()
     }
     else {
