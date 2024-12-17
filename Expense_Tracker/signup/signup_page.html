@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup_page.css">
+</head>
+
+<body>
+    <div id="signup_con">
+        <div id="signup">
+            <h1 id="title">Expense Tracker</h1>
+            <p>Sign up to track your Expenses and take control of your finances.</p>
+            <form action="" method="post" id="signup_form">
+                <input type="text" placeholder="Mobile Number or Email" autocomplete="off" id="mobile">
+                <span id="mobile_error"></span>
+                <input type="text" placeholder="Username" id="Username" autocomplete="off">
+                <span id="Username_error"></span>
+                <div id="password_con">
+                    <input type="password" placeholder="Password" id="password" autocomplete="off">
+                    <button type="button" id="show">Show</button>
+                </div>
+                <span id="password_error"></span>
+                <span id="existed"></span>
+                <button type="submit" id="signup_button">SIGN UP</button>
+            </form>
+        </div>
+        <div id="login_link">
+            <p>Have an account? <a href="../login/login_page.html">Log in</a></p>
+        </div>
+    </div>
+    <script src="signup_page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+#signup_con
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    height: 100vh;
+}
+#signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    border: 1px solid rgb(226, 224, 221);
+    width: 30vw;
+    padding: 2vw;
+}
+#title{
+    font-family:'Courier New', Courier, monospace;
+    font-size: calc(1.5rem + 1vw);
+}
+#signup_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    gap: 1vh;
+}
+#signup_form input{
+    width:25vw;
+    height: 5vh;
+    margin-top: 1vh;
+    background-color: black;
+    border:1px solid rgb(171, 169, 169);
+    border-radius: 10px;
+    font-size: calc(0.5rem + 0.5vw);
+}
+#signup_form input::placeholder{
+    color: white;
+    opacity: 0.8;
+    text-align: left;
+    padding-left: 1.5vh;
+    font-size: calc(0.5rem + 0.5vw);
+}
+#password_con
+{
+    display: flex;
+    width: 25vw;
+    border:1px solid rgb(171, 169, 169);
+    border-radius: 10px;
+}
+#password
+{
+    border:none !important;
+}
+#password:focus
+{
+    border: none;
+    outline: none;
+}
+#password_con button{
+    background-color: black;
+    margin-right: 1.5vh;
+    color: white;
+    border: none;
+    font-size: calc(0.5rem + 0.5vw);
+    display: none;
+}
+#signup_button{
+    width:25vw;
+    height: 5vh;
+    margin-top: 7vh;
+    background-color: rgb(21, 68, 176);
+    font-size: calc(0.5rem + 0.5vw);
+    border: none;
+    border-radius: 15px;
+}
+
+#login_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(226, 224, 221);
+    width: 30vw;
+    height: 8vh;
+}
+#login_link a{
+    padding-left: 1vh;
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+    font-weight: 900;
+}
+p{
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+#password_error,#Username_error,#mobile_error,#credential_err{
+    color: red;
+}
+@media screen and (max-width:424px){
+    #login_link,#signup{
+        width: 80vw;
+        padding: 5vh 2vh;
+    }
+    #password_con{
+        width: 70vw;
+    }
+    #signup_form input,#signup_button{
+        width: 70vw;
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    #login_link,#signup{
+        width: 50vw;
+        padding: 5vh 2vh;
+    }
+    #password_con{
+        width: 40vw;
+    }
+    #signup_form input,#signup_button{
+        width: 40vw;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    #login_link,#signup{
+        width: 50vw;
+        padding: 5vh 2vh;
+    }
+    #password_con{
+        width: 40vw;
+    }
+    #signup_form input,#signup_button{
+        width: 40vw;
+    }
+}
+

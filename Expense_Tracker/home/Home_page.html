@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home_page.css">
+</head>
+
+<body>
+    <div id="Home_header">
+        <header class="sticky-top text-bg-light card card-body d-flex flex-row justify-content-between">
+            <h3 id="message" class=""></h3>
+            <button id="Logout" class="btn btn-outline-danger">Logout</button>
+        </header>
+        <nav class="fixed-top text-bg-light card d-flex flex-column gap-5 ">
+            <h2 class="col-12 text-center mb-5 mt-3">Expense Tracker</h2>
+            <div id="side_bar" class="d-flex gap-3 flex-column text-center">
+                <p class="btn_nav col-12 btn btn-outline-primary">Home</p>
+                <p class="btn_nav col-12 btn btn-outline-primary">Current Month</p>
+                <p class="btn_nav col-12 btn btn-outline-primary">previous Month</p>
+                <p class="btn_nav col-12 btn btn-outline-primary">Over review</p>
+                <p class="btn_nav col-12 btn btn-outline-primary">reciepts</p>
+            </div>
+        </nav>
+    </div>
+    <main id="Home_main">
+        <section id="Home">
+            <h1>Home</h1>
+            <div class="col-md-6">
+                <canvas id="home_chart"></canvas>
+            </div>
+        </section>
+        
+        <section id="currrentMonth">
+            <div class="card card-body">
+                <h2 class="card-title text-center">Present Month Expenses Details</h2>
+                <h3 class="card-title">Add Expenses</h3>
+
+                <form action="" class="row g-3" id="expenses_form">
+                    <div class="col-md-4">
+                        <label for="expense_amount" class="form-label">Amount</label>
+                        <input type="number" id="expense_amount" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="expense_category" class="form-label">Category</label>
+                        <select id="expense_category" class="form-select" required>
+                            <option selected value="" hidden>Choose....</option>
+                            <option value="Food">Food</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="expense_date" class="form-label">Date</label>
+                        <input type="date" id="expense_date" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary">Add Expense</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card card-body mt-1">
+                <h3 class="card-title">Expenses</h3>
+                <table class="table table-hover  table-striped" id="expenses_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card card-body mt-1">
+                <h3 class="card-title">Expenses Summary</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul id="expense_summary" class="list_group">
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="expense_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="previousMonth" class="card card-body mt-1">
+            <h1 id="previousmonthname" class="text-center mb-4"></h1>
+            <div id="form-copy">
+            </div>
+            <button type="button" class="btn btn-primary" id="togle">Add Expense</button>
+            <div class="card card-body mt-1">
+                <h3 class="card-title">Expenses</h3>
+                <table class="table table-hover  table-striped" id="expenses_table1">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card card-body mt-1">
+                <h3 class="card-title">Expenses Summary</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul id="expense_summary1" class="list_group">
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="expense_chart1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="overReview">
+            <div class="card card-body mt-1">
+                <h2 class="card-title text-center">overall Expenses Details</h2>
+                <h3 class="card-title">Expenses Summary</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul id="overall_summary" class="list_group">
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="overall_chart"></canvas>
+                    </div>
+                    <div class="col-md-5">
+                        <canvas id="overall_bar_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <h2 class="card-title text-center card mt-1">catagories wise details</h2>
+            <div class=" card card-body mt-1">
+                <h3 class="card-title text-center">Food</h3>
+                <div class="row justify-content-around" id="Food_con">
+                    <div class="col-md-4">
+                        <ul id="Food" class="list_group table_style">
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="Food_chart"></canvas>
+                    </div>
+                    <div class="col-md-8">
+                        <canvas id="Food_bar_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class=" card card-body mt-1">
+                <h3 class="card-title text-center">Entertainment</h3>
+                <div class="row justify-content-around" id="Entertainment_con">
+                    <div class="col-md-4">
+                        <ul id="Entertainment" class="list_group table_style">
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="Entertainment_chart"></canvas>
+                    </div>
+                    <div class="col-md-8">
+                        <canvas id="Entertainment_bar_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class=" card card-body mt-1">
+                <h3 class="card-title text-center">Other</h3>
+                <div class="row justify-content-around" id="Other_con">
+                    <div class="col-md-4">
+                        <ul id="Other" class="list_group table_style">
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="Other_chart"></canvas>
+                    </div>
+                    <div class="col-md-8">
+                        <canvas id="Other_bar_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class=" card card-body mt-1">
+                <h3 class="card-title text-center">Transport</h3>
+                <div class="row justify-content-around" id="Transport_con">
+                    <div class="col-md-4">
+                        <ul id="Transport" class="list_group table_style">
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="Transport_chart"></canvas>
+                    </div>
+                    <div class="col-md-8">
+                        <canvas id="Transport_bar_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-body mt-1">
+                <h3 class="card-title text-center">All Expenses</h3>
+                <table class="table table-hover  table-striped" id="expenses_table_overall">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="reciepts">
+            <h1>reciepts</h1>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="home_page.js" defer></script>
+    <script src="current_section.js" defer></script>
+    <script src="home_section.js" defer></script>
+    <script src="previousMonth_section.js" defer></script>
+    <script src="overReview_section.js" defer></script>
+    <script src="receipts_section.js" defer></script>
+    <script src="sections_setting.js" defer></script>
+</body>
+
+</html>
