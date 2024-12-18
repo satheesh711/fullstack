@@ -165,7 +165,6 @@ function create_month_details() {
 function table_create(months, month_catagory, catagory) {
     let catagories_var = document.getElementById(`${catagory}`)
     catagories_var.innerHTML = ""
-    // bargraph("bar_chart", catagory)
     for (let a = 0; a < months.length; a++) {
         let item = document.createElement("li")
         item.className = "list-group-item"

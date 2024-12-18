@@ -33,7 +33,7 @@
                 <canvas id="home_chart"></canvas>
             </div>
         </section>
-        
+
         <section id="currrentMonth">
             <div class="card card-body">
                 <h2 class="card-title text-center">Present Month Expenses Details</h2>
@@ -115,7 +115,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="card card-body mt-1" >
+            <div class="card card-body mt-1">
                 <h3 class="card-title">Expenses Summary</h3>
                 <div class="row">
                     <div class="col-md-6">
@@ -208,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card card-body mt-1">
                 <h3 class="card-title text-center">All Expenses</h3>
                 <table class="table table-hover  table-striped" id="expenses_table_overall">
@@ -226,9 +226,56 @@
             </div>
         </section>
 
-
         <section id="reciepts">
-            <h1>reciepts</h1>
+            <div class="card card-body">
+                <h2 class="card-title text-center">Reciepts</h2>
+
+                <form action="" class="row g-3 align-items-end justify-content-center" id="reciepts_form">
+                    <div class="col-md-3">
+                        <p class="card-title">From</p>
+                        <label for="from_year" class="form-label">Year</label>
+                        <select id="from_year" class="form-select" required>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="from_month" class="form-label">Month</label>
+                        <select id="from_month" class="form-select" required>
+                        </select>
+                    </div>
+                    <div class="col-md-6 row">
+                        <p class="card-title">To(select same month and year for single month report)</p>
+                        <div class="col-md-6">
+                            <label for="to_year" class="form-label">Year</label>
+                            <select id="to_year" class="form-select" required>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="to_month" class="form-label">Month</label>
+                            <select id="to_month" class="form-select"  required>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ms-5">
+                        <button type="submit" class="btn btn-primary">get results</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card card-body mt-1">
+                <h3 class="card-title">Expenses</h3>
+                <table class="table table-hover  table-striped" id="reciepts_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
