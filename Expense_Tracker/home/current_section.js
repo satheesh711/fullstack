@@ -6,7 +6,7 @@ let expenseChart;
 
 function currentMonth() {
     update_expenses_items()
-    update_expenses_summary("expense_chart")
+    update_expenses_summary("expense_chart",expense_summary)
     expenses_form.addEventListener("submit", (e) => {
         e.preventDefault()
         e.stopImmediatePropagation()
@@ -23,7 +23,7 @@ function currentMonth() {
             if (check) {
                 saveExpenses_data({ "expense_amount": amount, "expense_category": catagory, "expense_date": date })
                 update_expenses_items()
-                update_expenses_summary("expense_chart")
+                update_expenses_summary("expense_chart",expense_summary)
                 alert("data added successfully")
                 setTimeout(() => {
                     expenses_form.reset();
@@ -73,7 +73,7 @@ function update_expenses_items() {
         defultexpensetablefn()
 }
 
-function update_expenses_summary(elementid) {
+function update_expenses_summary(elementid,expense_summary) {
     let expense_data = expensegetuserfn()
     if (! (expense_data.length)  ) {
         defultsummarytablefn()
@@ -158,7 +158,7 @@ function DeleteExpense_item(index) {
     updateexpensedata(data)
     expensesetfn(data)
     update_expenses_items()
-    update_expenses_summary("expense_chart")
+    update_expenses_summary("expense_chart",expense_summary)
     return editdata
 }
 

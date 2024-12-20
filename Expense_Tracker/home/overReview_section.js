@@ -49,26 +49,7 @@ function overal_row(element, index) {
 function overall_expenses_summary() {
     let summary_data = expensegetuserfn()
     if (summary_data.length > 0 && summary_data[0].expenses.length) {
-        summary_data = summary_data[0].expenses
-        let catagory = {}
-
-        summary_data.forEach(expense => {
-            if (!catagory[expense.expense_category])
-                catagory[expense.expense_category] = 0
-            catagory[expense.expense_category] += expense.expense_amount
-        }
-        )
-        overall_summary.innerHTML = ""
-        catagory = sortdata_amount(catagory)
-        for (let catagorydata in catagory) {
-            let item = document.createElement("li")
-            item.className = "list-group-item"
-            item.innerHTML = `
-            <span>${catagorydata}</span>
-            <span>${catagory[catagorydata].toFixed(2)}</span>
-            `
-            overall_summary.appendChild(item)
-        }
+        [catagory,chat_summary]=sumary_data_calcutation(summary_data,overall_summary)
         bargraph("overall_bar_chart", catagory)
         update_expenses_piechart(catagory, "overall_chart", chat_summary)
     }
@@ -216,3 +197,27 @@ function get_catagory_update(month_catagory) {
     return res
 }
 
+function sumary_data_calcutation(summary_data,overall_summary)
+{
+    summary_data = summary_data[0].expenses
+        let catagory = {}
+
+        summary_data.forEach(expense => {
+            if (!catagory[expense.expense_category])
+                catagory[expense.expense_category] = 0
+            catagory[expense.expense_category] += expense.expense_amount
+        }
+        )
+        overall_summary.innerHTML = ""
+        catagory = sortdata_amount(catagory)
+        for (let catagorydata in catagory) {
+            let item = document.createElement("li")
+            item.className = "list-group-item"
+            item.innerHTML = `
+            <span>${catagorydata}</span>
+            <span>${catagory[catagorydata].toFixed(2)}</span>
+            `
+            overall_summary.appendChild(item)
+        }
+        return [catagory,chat_summary]
+}

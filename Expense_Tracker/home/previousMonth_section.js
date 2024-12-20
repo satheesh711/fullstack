@@ -5,7 +5,7 @@ let expenses_items1 = document.getElementById("expenses_table1").querySelector("
 
 function previousMonth() {
     update_expenses_items1()
-    update_expenses_summary1("expense_chart1")
+    update_expenses_summary1("expense_chart1",expense_summary1)
     let form_copy = document.getElementById("form-copy")
     form_copy.textContent = ""
     const clonedForm = expenses_form.cloneNode(true);
@@ -51,7 +51,7 @@ function previousMonth() {
         if (check) {
             saveExpenses_data({ "expense_amount": amount, "expense_category": catagory, "expense_date": date })
             update_expenses_items1()
-            update_expenses_summary1("expense_chart1")
+            update_expenses_summary1("expense_chart1",expense_summary1)
             alert("data added successfully")
             setTimeout(() => {
                 form_layout.reset();
@@ -69,7 +69,7 @@ function previousMonth() {
 
 }
 
-function update_expenses_summary1(elementid) {
+function update_expenses_summary1(elementid,expense_summary1) {
     let expense_data = expensegetuserfn()
     if (expense_data.length <= 0 ) {
         defultsummarytablefn1()
@@ -156,7 +156,7 @@ function DeleteExpense_item1(index) {
     updateexpensedata(data)
     expensesetfn(data)
     update_expenses_items1()
-    update_expenses_summary1("expense_chart1")
+    update_expenses_summary1("expense_chart1",expense_summary1)
     return editdata
 }
 

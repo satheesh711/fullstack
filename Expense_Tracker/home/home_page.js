@@ -4,7 +4,7 @@ if(!username.length)
    gotoLogin()
 }
 let message = document.getElementById("message")
-message.textContent = `wellcome, ${username}`
+message.textContent = `welcome, ${username}`
 
 let logInusername = LogedIngetItem()
 let logout = document.getElementById("Logout")

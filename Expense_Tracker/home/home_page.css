@@ -35,11 +35,11 @@ nav
     width: 82vw;
     margin-top: 1vh;
 }
-#expense_summary,#expense_summary1,#overall_summary ,.table_style{
+#expense_summary,#expense_summary1,#overall_summary ,.table_style,#home_summary1,#home_summary2,#home_summary3{
     list-style-type: none;
     padding: 0;
   }
-#expense_summary li,#expense_summary1 li,#overall_summary li ,.table_style li{
+#expense_summary li,#expense_summary1 li,#overall_summary li ,.table_style li,#home_summary1 li,#home_summary2 li,#home_summary3 li{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;

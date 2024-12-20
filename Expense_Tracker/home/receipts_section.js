@@ -4,6 +4,8 @@ let to_month = document.getElementById("to_month")
 let to_year = document.getElementById("to_year")
 let reciepts_form = document.getElementById("reciepts_form")
 let receipts_table = document.getElementById("reciepts_table").querySelector("tbody")
+let pdf_btn = document.getElementById("pdf_btn")
+let pdf_data
 
 function receipts() {
     Create_from_Options()
@@ -11,8 +13,12 @@ function receipts() {
             e.preventDefault()
             let [date1,date2]=get_form_data()
             fiter_data(date1,date2)
+            document.getElementById("month_name").textContent=`${pdf_data} Expenses`
             reciepts_form.reset()
         })
+    pdf_btn.addEventListener("click",()=>{
+        createPdf()
+    })
 }
 function Create_from_Options() {
     [Months, Years] = get_Moths_Years()
@@ -97,6 +103,7 @@ function get_form_data()
     let year2=to_year.value
     let month1=from_month.value
     let month2=to_month.value
+    getpdf_month_data(month1,year1,month2,year2)
     let date1=new Date(year1,monthNames.indexOf(month1),1)
     date1.setHours(0,0,0,0)
     let date2 = new Date(year2,monthNames.indexOf(month2),1)
@@ -128,11 +135,57 @@ function fiter_data(date1,date2)
         return "No data Found"
     }
     data=sortdata(data)
+    k=0
+    receipts_table.textContent=""
     for(i=0;i<data.length;i++)
     {
         if((new Date(data[i].expense_date)).getTime() >= date1.getTime() && (new Date(data[i].expense_date)).getTime() <= date2.getTime())
         {
-            receipts_table.append(overal_row(data[i],i))
+            receipts_table.append(overal_row(data[i],k++))
         }
     }
+}
+function createPdf()
+{
+    let {jsPDF} = window.jspdf;
+    let doc = new jsPDF();
+
+    doc.setFontSize(16);
+    doc.text("Expenses", 100, 20);
+    doc.setFontSize(12);
+    doc.text(`${pdf_data} Expenses`, 14, 30);
+
+    doc.autoTable({
+        html:'#reciepts_table',
+        startY: 40,
+        theme:'striped',
+        styles:{fontSize:10}
+    })
+
+    doc.save("expenses data.pdf")
+
+}
+function getpdf_month_data(m1,y1,m2,y2)
+{
+    if(m1 == m2 && y1 == y2)
+    {
+        pdf_data=`${m1} ${y1} Month`
+        return
+    }
+    else
+    {
+        let date1=new Date(y1,monthNames.indexOf(m1),1)
+        let date2=new Date(y2,monthNames.indexOf(m2),1)
+        if(date1.getTime()>date2.getTime())
+        {
+            pdf_data=`From ${m2} ${y2} To ${m1} ${y1} Months`
+            return 
+        }
+        else
+        {
+            pdf_data=`From ${m1} ${y1} To ${m2} ${y2} Months`
+            return
+        }
+    }
+
 }
