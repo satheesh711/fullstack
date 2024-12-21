@@ -29,31 +29,27 @@
     </div>
     <main id="Home_main">
         <section id="Home">
-            <div class="vh-100">
+            <div class="vh-100" id="Home_con">
                 <div class="row justify-content-around">
                     <div class="col-md-5 card" style="width:27vw;">
                         <h3 class="text-center">current Month</h3>
-                        <p>most spending</p>
-                        <p>least spending</p>
                         <ul id="home_summary1" class="list_group">
                         </ul>
                         <canvas id="home_chart1"></canvas>
                     </div>
                     <div class="col-md-5 card" style="width:26vw;">
                         <h3 class="text-center">Previous Month</h3>
-                        <p>most spending</p>
-                        <p>least spending</p>
                         <ul id="home_summary2" class="list_group">
                         </ul>
                         <canvas id="home_chart2"></canvas>
                     </div>
-                    <div class="col-md-12 card ms-3" style="width:26vw;" id="home_overall">
+                    <div class="col-md-12 card ms-3" style="width:26vw;">
                         <h3 class="text-center">overall Month</h3>
-                        <p>most spending</p>
-                        <p>least spending</p>
-                        <ul id="home_summary3" class="list_group">
-                        </ul>
-                        <canvas id="home_chart3"></canvas>
+                        <div id="home_overall">
+                            <ul id="home_summary3" class="list_group">
+                            </ul>
+                            <canvas id="home_chart3"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>

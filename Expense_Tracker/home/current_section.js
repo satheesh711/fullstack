@@ -104,6 +104,7 @@ function update_expenses_summary(elementid,expense_summary) {
         if(k==0)
             defultsummarytablefn()
         update_expenses_piechart(catagory_summary, elementid)
+        return catagory_summary
     }
 }
 
