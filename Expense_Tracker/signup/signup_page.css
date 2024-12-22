@@ -108,7 +108,7 @@ p{
 #password_error,#Username_error,#mobile_error,#credential_err{
     color: red;
 }
-@media screen and (max-width:424px){
+@media screen and (max-width:576px){
     #login_link,#signup{
         width: 80vw;
         padding: 5vh 2vh;
@@ -120,7 +120,7 @@ p{
         width: 70vw;
     }
 }
-@media screen and (min-width:425px) and (max-width:768px){
+@media screen and (min-width:576px) and (max-width:768px){
     #login_link,#signup{
         width: 50vw;
         padding: 5vh 2vh;
@@ -132,7 +132,7 @@ p{
         width: 40vw;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1200px){
     #login_link,#signup{
         width: 50vw;
         padding: 5vh 2vh;
