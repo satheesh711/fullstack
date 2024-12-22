@@ -11,8 +11,21 @@ body::-webkit-scrollbar {
 header
 {
     width: 82vw !important;
-    height: 11vh;
     margin-left: 17vw !important;
+    margin-top: 5px !important;
+}
+#side_bar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    gap: 8vh;
+}
+i
+{
+    font-size: calc(1rem + 1vw);
 }
 .sticky-top
 {
@@ -22,7 +35,7 @@ nav
 {
     width: 16vw !important;
     margin-top: 5px ;
-    height: 98vh !important;
+    height: 100vh !important;
     margin-left: 0.5vw;
 }
 .btn_nav{
@@ -32,6 +45,7 @@ nav
 }
 #Home_main{
     margin-left: 17vw;
+    /* margin-top: 12.5vh !important; */
     width: 82vw;
     margin-top: 1vh;
 }
@@ -49,3 +63,86 @@ nav
     max-width: 100%;
     height: auto;
   }
+@media screen and (max-width:576px){
+    #expenses_table
+    {
+        font-size: 12px;
+    }
+    #expenses_table1
+    {
+        font-size: 11px;
+    }
+    #message
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    nav
+    {
+        width: 12vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 13vw;
+        width: 86vw;
+    }
+    header
+    {
+        margin-left: 13vw !important;
+        width: 86vw !important;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    nav
+    {
+        width: 10vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 11vw;
+        width: 88vw;
+    }
+    header
+    {
+        margin-left: 11vw !important;
+        width: 88vw !important;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    nav
+    {
+        width: 8vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 9vw;
+        width: 90vw;
+    }
+    header
+    {
+        margin-left: 9vw !important;
+        width: 90vw !important;
+    }
+
+}
+@media screen and (min-width:1200px){
+    nav
+    {
+        width: 6vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 7vw;
+        width: 92vw;
+    }
+    header
+    {
+        margin-left: 7vw !important;
+        width: 92vw !important;
+    }
+
+}
+

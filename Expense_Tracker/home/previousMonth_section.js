@@ -2,6 +2,7 @@ let expense_Chart1;
 let expense_summary1 = document.getElementById("expense_summary1")
 let expense_chart1 = document.getElementById("expense_chart1")
 let expenses_items1 = document.getElementById("expenses_table1").querySelector("tbody")
+let expense_items2 =document.getElementById("expenses_table1")
 
 function previousMonth() {
     update_expenses_items1()
@@ -163,6 +164,8 @@ function DeleteExpense_item1(index) {
 function update_expenses_items1() {
     let tabledata = expensegetuserfn()
     if (tabledata.length && tabledata[0].expenses.length) {
+        expense_items2.style.display="block"
+        expense_items2.style.display=""
         tabledata = tabledata[0].expenses
         expenses_items1.innerHTML = ""
         i = 0
@@ -191,7 +194,7 @@ function Monthcheck(dateprevious) {
 }
 function defultexpensetablefn1() {
     expenses_items1.innerHTML = ""
-    expenses_items1.textContent = "add expense to get details"
+    expense_items2.style.display="none"
 }
 function defultsummarytablefn1()
 {

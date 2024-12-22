@@ -55,6 +55,8 @@ function saveExpenses_data(data) {
 function update_expenses_items() {
     let tabledata = expensegetuserfn()
     if (tabledata.length && tabledata[0].expenses.length) {
+        document.getElementById("expenses_table").style.display="block"
+        document.getElementById("expenses_table").style.display=""
         tabledata = tabledata[0].expenses
         expenses_items.innerHTML = ""
         i = 0
@@ -192,7 +194,8 @@ function expensesetfn(expenses) {
 }
 function defultexpensetablefn() {
     expenses_items.innerHTML = ""
-    expenses_items.textContent = "add expense to get details"
+    document.getElementById("expenses_table").style.display="none"
+    // expenses_items.textContent = "add expense to get details"
 }
 function defultsummarytablefn()
 {

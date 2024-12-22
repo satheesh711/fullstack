@@ -6,44 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="stylesheet" href="home_page.css">
 </head>
 
 <body>
     <div id="Home_header">
-        <header class="sticky-top text-bg-light card card-body d-flex flex-row justify-content-between">
-            <h3 id="message" class=""></h3>
-            <button id="Logout" class="btn btn-outline-danger">Logout</button>
+        <header class="sticky-top  card card-body text-bg-light">
+            <h2 class="text-center">Expense Tracker</h2>
+            <div class=" d-flex flex-row justify-content-between">
+                <h3 id="message" class=""></h3>
+                <button id="Logout" class="btn btn-outline-danger">Logout</button>
+            </div>
         </header>
         <nav class="fixed-top text-bg-light card d-flex flex-column gap-5 ">
-            <h2 class="col-12 text-center mb-5 mt-3">Expense Tracker</h2>
-            <div id="side_bar" class="d-flex gap-3 flex-column text-center">
-                <p class="btn_nav col-12 btn btn-outline-primary">Home</p>
-                <p class="btn_nav col-12 btn btn-outline-primary">Current Month</p>
-                <p class="btn_nav col-12 btn btn-outline-primary">previous Month</p>
-                <p class="btn_nav col-12 btn btn-outline-primary">Over review</p>
-                <p class="btn_nav col-12 btn btn-outline-primary">reciepts</p>
+            <div id="side_bar" class=" justify-content-center text-center">
+                <p class="btn_nav col-12 btn btn-outline-primary"><i class="fa-solid fa-house"></i></p>
+                <p class="btn_nav col-12 btn btn-outline-primary"><i class="fa-regular fa-calendar"></i></p>
+                <p class="btn_nav col-12 btn btn-outline-primary"><i class="fa-solid fa-backward"></i></p>
+                <p class="btn_nav col-12 btn btn-outline-primary"><i class="fa-solid fa-database"></i></p>
+                <p class="btn_nav col-12 btn btn-outline-primary"><i class="fa-solid fa-download"></i></p>
             </div>
         </nav>
     </div>
     <main id="Home_main">
         <section id="Home">
-            <div class="vh-100" id="Home_con">
+            <div id="Home_con" class="card card-body mt-1">
                 <div class="row justify-content-around">
-                    <div class="col-md-5 card" style="width:27vw;">
+                    <div class="col-md-4">
                         <h3 class="text-center">current Month</h3>
                         <ul id="home_summary1" class="list_group">
                         </ul>
                         <canvas id="home_chart1"></canvas>
                     </div>
-                    <div class="col-md-5 card" style="width:26vw;">
+                    <div class="col-md-4">
                         <h3 class="text-center">Previous Month</h3>
                         <ul id="home_summary2" class="list_group">
                         </ul>
                         <canvas id="home_chart2"></canvas>
                     </div>
-                    <div class="col-md-12 card ms-3" style="width:26vw;">
+                    <div class="col-md-4">
                         <h3 class="text-center">overall Month</h3>
                         <div id="home_overall">
                             <ul id="home_summary3" class="list_group">
@@ -214,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" card card-body mt-1">
+            <div class="card card-body mt-1">
                 <h3 class="card-title">Transport</h3>
                 <div class="row justify-content-around" id="Transport_con">
                     <div class="col-md-4">
