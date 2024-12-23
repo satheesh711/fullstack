@@ -26,6 +26,7 @@ header
 i
 {
     font-size: calc(1rem + 0.5vw);
+    color: #073e3b;
 }
 .sticky-top
 {
@@ -145,17 +146,17 @@ nav
 @media screen and (min-width:1200px){
     nav
     {
-        width: 4vw !important;
+        width: 5vw !important;
     }
     #Home_main
     {
-        margin-left: 5vw;
-        width: 94vw;
+        margin-left: 6vw;
+        width: 93vw;
     }
     header
     {
-        margin-left: 5vw !important;
-        width: 94vw !important;
+        margin-left: 6vw !important;
+        width: 93vw !important;
     }
 
 }
