@@ -20,12 +20,12 @@ header
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    justify-content: space-around;
+    justify-content:center;
     gap: 8vh;
 }
 i
 {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 0.5vw);
 }
 .sticky-top
 {
@@ -76,8 +76,6 @@ nav
     {
         font-size: 18px;
     }
-}
-@media screen and (min-width:576px) and (max-width:768px){
     nav
     {
         width: 12vw !important;
@@ -92,26 +90,8 @@ nav
         margin-left: 13vw !important;
         width: 86vw !important;
     }
-
 }
-@media screen and (min-width:768px) and (max-width:992px){
-    nav
-    {
-        width: 10vw !important;
-    }
-    #Home_main
-    {
-        margin-left: 11vw;
-        width: 88vw;
-    }
-    header
-    {
-        margin-left: 11vw !important;
-        width: 88vw !important;
-    }
-
-}
-@media screen and (min-width:992px) and (max-width:1200px){
+@media screen and (min-width:576px) and (max-width:768px){
     nav
     {
         width: 8vw !important;
@@ -128,7 +108,7 @@ nav
     }
 
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:768px) and (max-width:992px){
     nav
     {
         width: 6vw !important;
@@ -142,6 +122,40 @@ nav
     {
         margin-left: 7vw !important;
         width: 92vw !important;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    nav
+    {
+        width: 6vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 7vw;
+        width: 92vw;
+    }
+    header
+    {
+        margin-left: 7vw !important;
+        width: 92vw !important;
+    }
+
+}
+@media screen and (min-width:1200px){
+    nav
+    {
+        width: 4vw !important;
+    }
+    #Home_main
+    {
+        margin-left: 5vw;
+        width: 94vw;
+    }
+    header
+    {
+        margin-left: 5vw !important;
+        width: 94vw !important;
     }
 
 }

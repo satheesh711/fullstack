@@ -7,31 +7,31 @@ let expenseChart;
 function currentMonth() {
     update_expenses_items()
     update_expenses_summary("expense_chart",expense_summary)
-    expenses_form.addEventListener("submit", (e) => {
+    expenses_form.addEventListener("submit", async (e) => {
         e.preventDefault()
         e.stopImmediatePropagation()
         let amount = amountfn(); let catagory = catagoryfn(); let date = datefn()
         if (isNaN(amount) || !catagory || !date) {
-            alert("Please fill in all fields correctly.");
+            sweetAlert("Please fill in all fields correctly.","info");
             return
         }
             let check = true;
             if (!CurrentMonthcheck(new Date(date))) {
-                alert("date not belongs to this month")
-                check = confirm("are you want to add belonging month")
+                sweetAlert("date not belongs to this month","error")
+                check =await sweetConfirm("Do you want to add data into belonging month")
             }
             if (check) {
                 saveExpenses_data({ "expense_amount": amount, "expense_category": catagory, "expense_date": date })
                 update_expenses_items()
                 update_expenses_summary("expense_chart",expense_summary)
-                alert("data added successfully")
+                sweetAlert("data added successfully","success")
                 setTimeout(() => {
                     expenses_form.reset();
                 }, 0);
                 return
             }
             else {
-                alert("data not added")
+                sweetAlert("data not added","error")
                 expenses_form.reset()
                 return 
             }
@@ -145,13 +145,13 @@ function EditExpense(index) {
     document.getElementById("expense_category").value = data.expense_category
     document.getElementById("expense_date").value = data.expense_date
 }
-function DeleteExpense(index) {
-    if (confirm("are you sure?")) {
+async function DeleteExpense(index) {
+    if (await sweetConfirm("are you sure?")) {
         DeleteExpense_item(index)
-        alert("data removed successfully")
+        sweetAlert("data removed successfully","success")
     }
     else {
-        alert("data not removed")
+        sweetAlert("data not removed","error")
     }
 }
 function DeleteExpense_item(index) {
@@ -222,4 +222,32 @@ function rowcreatefn(item, index,count) {
 function CurrentMonthcheck(dataDate) {
     let currentDate = new Date();
     return (dataDate.getFullYear() === currentDate.getFullYear() && dataDate.getMonth() === currentDate.getMonth());
+}
+
+function sweetAlert(msg,status)
+{
+    Swal.fire({
+        toast: true,
+        position: 'top', 
+        icon: `${status}`,  
+        title:`${msg}` ,
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true
+    });
+}
+
+async function sweetConfirm(msg)
+{
+    const result =await Swal.fire({
+        title: `${msg}`,
+        text: "You won't be able to revert data!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'No, cancel!'
+    })
+    return result.isConfirmed
 }

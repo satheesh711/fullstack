@@ -34,33 +34,33 @@ function previousMonth() {
         form_layout.style.display = "block"
         form_layout.style.display = ""
     })
-    form_layout.addEventListener("submit", (e) => {
+    form_layout.addEventListener("submit", async (e) => {
         e.preventDefault()
         e.stopImmediatePropagation()
         form_layout.style.display = "none"
         togle.style.display = "block"
         let amount = amountfn1(); let catagory = catagoryfn1(); let date = datefn1()
         if (isNaN(amount) || !catagory || !date) {
-            alert("Please fill in all fields correctly.");
+            sweetAlert("Please fill in all fields correctly.","info");
             return
         }
         let check = true;
         if (!Monthcheck(new Date(date))) {
-            alert("date not belongs to this month")
-            check = confirm("are you want to add belonging month")
+            sweetAlert("date not belongs to this month","info")
+            check = await sweetConfirm("are you want to add belonging month")
         }
         if (check) {
             saveExpenses_data({ "expense_amount": amount, "expense_category": catagory, "expense_date": date })
             update_expenses_items1()
             update_expenses_summary1("expense_chart1",expense_summary1)
-            alert("data added successfully")
+            sweetAlert("data added successfully","success")
             setTimeout(() => {
                 form_layout.reset();
             }, 0);
             return
         }
         else {
-            alert("data not added")
+            sweetAlert("data not added","error")
             form_layout.reset()
             return 
         }
@@ -141,13 +141,13 @@ function EditExpense1(index)
     document.getElementById("form-copy").getElementsByTagName("input")[1].value = data.expense_date
 }
 
-function DeleteExpense1(index) {
-    if (confirm("are you sure?")) {
+async function DeleteExpense1(index) {
+    if (await sweetConfirm("are you sure?")) {
         DeleteExpense_item1(index)
-        alert("data removed successfully")
+        sweetAlert("data removed successfully","success")
     }
     else {
-        alert("data not removed")
+        sweetAlert("data not removed","error")
     }
 }
 function DeleteExpense_item1(index) {
