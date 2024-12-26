@@ -13,6 +13,12 @@ for (let i = 0; i < btns.length; i++) {
     })
 }
 
+document.getElementById("Home_current").addEventListener('click', () => {
+      sections[sessionStorage.getItem("defultsession")].style.display = 'none'
+      sessionStorage.setItem("defultsession", '1')
+      displaysections(1)
+   });
+
 function displaysectionsnone() {
     for (let i = 0; i < sections.length; i++)
        sections[i].style.display = "none"
