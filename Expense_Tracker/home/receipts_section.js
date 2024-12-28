@@ -6,19 +6,27 @@ let reciepts_form = document.getElementById("reciepts_form")
 let receipts_table = document.getElementById("reciepts_table").querySelector("tbody")
 let pdf_btn = document.getElementById("pdf_btn")
 let pdf_data
-
 function receipts() {
+    let data_items=false
     Create_from_Options()
-    reciepts_form.addEventListener("submit",(e)=>{
+    reciepts_form.addEventListener("submit",async (e)=>{
             e.preventDefault()
-            let [date1,date2]=get_form_data()
-            fiter_data(date1,date2)
-            document.getElementById("month_name").textContent=`${pdf_data} Expenses`
-            reciepts_form.reset()
+            let [date1,date2]=get_form_data();
+            setTimeout(() => {
+                data_items=fiter_data(date1,date2)
+                document.getElementById("month_name").textContent=`${pdf_data} Expenses`
+                reciepts_form.reset()
+            }, 100);
         })
-    pdf_btn.addEventListener("click",()=>{
-        createPdf()
-    })
+        pdf_btn.addEventListener("click",()=>{
+            if(!data_items)
+                sweetAlert("please Select Expenses months..","error")
+            else
+            {
+            createPdf()
+            }
+        })
+    
 }
 function Create_from_Options() {
     [Months, Years] = get_Moths_Years()
@@ -132,7 +140,8 @@ function fiter_data(date1,date2)
         data = data[0].expenses
     }
     if (!data.length) {
-        return "No data Found"
+        // return "No data Found";
+        return false;
     }
     data=sortdata(data)
     k=0
@@ -144,6 +153,7 @@ function fiter_data(date1,date2)
             receipts_table.append(overal_row(data[i],k++))
         }
     }
+    return true
 }
 function createPdf()
 {
@@ -163,6 +173,7 @@ function createPdf()
     })
 
     doc.save("expenses data.pdf")
+    sweetAlert("Expenses Downloanded..","success")
 
 }
 function getpdf_month_data(m1,y1,m2,y2)
