@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(205, 238, 238);
+    /* background-color: rgb(205, 238, 238); */
+    background: #f8f9fa;
     font-family: Arial, sans-serif;
     color: #343a40;
 }
@@ -13,8 +14,14 @@ header {
     width: 82vw !important;
     margin-left: 17vw !important;
     margin-top: 5px !important;
+    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
+    color: rgb(0, 0, 0) !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+#logo
+{
+    border-radius: 50%;
+}
 #side_bar {
     display: flex;
     flex-direction: column;
@@ -22,11 +29,12 @@ header {
     height: 100vh;
     justify-content: center;
     gap: 8vh;
+    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
     font-size: calc(1rem + 0.5vw);
-    color: #073e3b;
 }
 
 .icon-container {
@@ -72,9 +80,16 @@ nav {
 }
 
 .btn_nav {
-    border: none !important;
-    color: black;
+    border: none ;
+    color: black ;
     font-weight: 600;
+    margin: 10px 0 ;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn_nav:hover {
+    background-color: #268a41;
+    transform: scale(1.05) ;
+    color: white;
 }
 
 #Home_main {
@@ -93,7 +108,7 @@ nav {
     padding: 10px 20px;
     font-size: 18px;
     color: white;
-    background: linear-gradient(45deg, #6a5acd, #00c6ff);
+    background: linear-gradient(45deg, #6d669d, #05b1e1);
     border: none;
     border-radius: 5px;
     cursor: pointer;

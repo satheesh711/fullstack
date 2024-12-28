@@ -12,14 +12,17 @@
 </head>
 <body>
     <div id="Home_header">
-        <header class="sticky-top  card card-body text-bg-light">
-            <h2 class="text-center">Expense Tracker</h2>
+        <header class="sticky-top  card card-body">
+            <div class="d-flex justify-content-center">
+                <img src="../images/logo.png" alt="Logo"  id ="logo" style="height: 40px; width: 40px;">
+                <h2 class="text-center">Expense Tracker</h2>
+            </div>
             <div class=" d-flex flex-row justify-content-between">
                 <h3 id="message" class=""></h3>
                 <button id="Logout" class="btn btn-outline-danger">Logout</button>
             </div>
         </header>
-        <nav class="fixed-top text-bg-light card d-flex flex-column gap-5 ">
+        <nav class="fixed-top bg-light card d-flex flex-column gap-5 ">
             <div id="side_bar" class=" justify-content-center text-center">
                 <div class="btn_nav col-12 btn btn-outline-primary icon-container">
                     <i class="fa-solid fa-house icon"></i>
@@ -326,6 +329,11 @@
             </div>
         </section>
     </main>
+
+    <!-- <footer class="text-center py-3" style="background-color: #6a5acd; color: white;">
+        <p>© 2024 Expense Tracker. All Rights Reserved.</p>
+    </footer> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
